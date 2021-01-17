@@ -16,7 +16,7 @@
 			<article style="text-align:left">
 			
 				<p><b>아이디</b></p>		<!-- 인풋창 안에 텍스트 삽입방법 필요.-->
-				<input type="text" name="id"style="width:500px;height:45px">
+				<input type="text" name="id"placeholder="@naver.com" style="width:500px;height:45px">
 				<br />
 				<p><b>비밀번호</b></p>
 				<input type="text" name="pw"style="width:500px;height:45px">
@@ -27,7 +27,7 @@
 				<p><b>이름</b></p>
 				<input type="text" name="name"style="width:500px;height:45px">
 				<p><b>생년월일</b></p>
-				<input type="text" name="birth_Year"style="width:155px;height:39px">
+				<input type="text" name="birth_Year"placeholder="년(4자)"style="width:155px;height:39px">
 				
 				<select name="월" id="month" style="width:155px;height:45px">
 					<option>&nbsp;월</option>	<!-- &emsp; 안먹힘, 앞에 여백 더 필요. -->
@@ -44,7 +44,7 @@
 					<option>&nbsp;11</option>
 					<option>&nbsp;12</option>
 				</select>
-				<input type="text" name="birth_Day"style="width:155px;height:39px">
+				<input type="text" name="birth_Day"placeholder="일"style="width:155px;height:39px">
 				<p><b>성별</b></p>
 				<select name="성별" id="sex" style="width:500px;height:45px">
 					<option>&nbsp;성별</option>
@@ -55,9 +55,9 @@
 				<br />
 				<br />
 				<span><b>본인 확인 이메일</b></span>
-				<span>(선택)</span>
+				<span style="font-size:10">(선택)</span>
 				<br />
-				<input type="text" name="verification_Email" style="width:490px;height:39px">
+				<input type="text" name="verification_Email" placeholder="선택입력"style="width:490px;height:39px">
 	<!-- --------------------------------------------------------------------------------- -->			
 				<p><b>휴대전화</b></p>
 				<select name="국가번호" id="country_Code" style="width:500px;height:45px">
@@ -67,12 +67,12 @@
 				</select>
 				<br />
 				<!-- 인풋창 간의 여백 필요. -->
-				<input type="text" name="전화번호입력 " style="width:350px;height:45px;">
-				<div style="text-align:center;color:white;background-color:#03c75a; width:120px; height:45px;display: inline-block">인증번호 받기</div>
+				<input type="text" name="전화번호입력 "placeholder="전화번호 입력" style="width:360px;height:45px;">
+				<input type="submit" value="인증번호 받기"style="text-align:center;color:white;background-color:#03c75a; width:120px; height:45px;display: inline-block">
 				<!-- 이 블럭부분과 인풋창간 위아래정렬 필요 -->
-				<input type="text" name="인증번호 입력하세요 " style="width:490px;height:45px; background-color:#f5f6f7">
+				<input type="text" name="인증번호 입력하세요 "placeholder="인증번호 입력하세요" style="width:490px;height:45px; background-color:#f5f6f7">
 				<!-- 텍스트 위아래 정렬방법 필요. -->
-				<div style="text-align:center;color:white;background-color:#03c75a; width:500px; height:45px;font-size:20px;vertical-align:middle">가입하기</div>
+				<input type="submit" value="가입하기"style="text-align:center;color:white;background-color:#03c75a; width:500px; height:45px;font-size:20px;vertical-align:middle">
 			</article>
 		</section>
 		<!-- --------------------------------------------------------------------------------- -->
