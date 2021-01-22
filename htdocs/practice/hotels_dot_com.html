@@ -1,101 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<title>국내 펜션 특가</title>
-	<style>
-/* 		#header {
-			height: 59px;
-			background: #d32f2f;
-		} */
-/* 		#header-full {
-			height: 32px;
-		} */
-		
-		#banner {
-			background-image: url('banner.png') ;
-			background-size: 100% 266px;
-		}
-		
-	</style>
+<meta charset="UTF-8" />
+<title>국내 펜션 특가</title>
+<style type="text/css">
+a {
+	text-decoration: none;
+	color:black;
+}
+
+body {
+	width: 100%;
+	margin:0;
+	/* display:block; */
+	/* background-color:#d32f2f; */
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+}
+
+#topUl {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.topMenu {
+	color: white;
+	height: 44px;
+	margin: 0;
+	padding: 15px 16px 0 16px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.topMenu:hover {
+	background: white;
+	color: #d32f2f;
+}
+
+#headerTopWrap {
+	background-color: #d32f2f;
+	height: 59px;
+}
+
+#headerTop {
+	margin: 0 auto;
+	width: 1228px;
+	height: 59px;
+	padding: 0 16px 0 16px;
+}
+
+#headerBottomWrap {
+	height: 16px;
+	padding: 5px 0 12px 0;
+}
+
+#headerBottom {
+	margin: 0 auto;
+	width: 1228px;
+	padding: 0 16px 0 16px;
+}
+
+label {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#bannerWrap {
+	background-image: url('banner.png');
+	background-size: 100% 100%;
+}
+
+#banner {
+	width: 1142px;
+	margin: 0 auto;
+	padding: 0 0px 20px 0px;
+}
+
+#boxWrap {
+	width: 1142px;
+	height: 100px;
+	padding: 0 0 0 0;
+	margin: 0 auto;
+}
+
+.box {
+	padding: 10px 0 0px 0;
+	border-width: thin;
+	border-style: solid;
+	border-radius: 3px;
+	border-color: black;
+	background-color: #f5f4f0;
+	font-size: 12px;
+	width: 1142px;
+	height: 87px;
+	margin: 0 auto;
+}
+
+#input {
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+	vertical-align: top;
+}
+
+.check {
+	display: inline-block;
+	text-align: left;
+	margin: 0px 10px 10px 10px;
+	vertical-align: top;
+}
+
+#select {
+	display: inline-block;
+	font-size: 12px;
+}
+
+#stay {
+	display: inline-block;
+	height: 50px;
+	font-size: 30px;
+	position: relative;
+	vertical-align: top;
+	padding: 0 10px 0 0px;
+}
+
+#room {
+	display: inline-block;
+	text-align: center;
+	margin: 0px 30px 10px 10px;
+	padding-bottom: 30px;
+	position: relative;
+	vertical-align: top;
+}
+
+.age {
+	display: inline-block;
+	text-align: right;
+	margin: 0px 10px 10px 10px;
+}
+
+#searchWrap {
+	width: 80px;
+	height: 109px;
+	display: inline-block;
+	text-align: right;
+	vertical-align: 150%;
+}
+
+#search {
+	background-color: rgb(21, 107, 193);
+	width: 100%;
+	height: 100%;
+	padding: 6px 16px 6px 16px;
+	color: white;
+	font-size: 16px;
+}
+
+.box2-1 {
+	width: 1144px;
+	height: 40px;
+	padding: 16px 0px 4px 0;
+	margin: auto;
+}
+
+.box2-2 {
+	border-width: thin;
+	border-style: solid;
+	border-radius: 3px;
+	border-color: black;
+	text-align: center;
+	font-size: 13px;
+	width: 1142px;
+	height: 37px;
+}
+
+#city {
+	width: 1144px;
+	margin: auto;
+}
+
+.nav {
+	display: inline-block;
+	border-radius: 15px;
+	border-color: rgb(232, 232, 232);
+	border-style: solid;
+	background-color: rgb(232, 232, 232);
+	padding: 1px 14px 1px 14px;
+	font-size: 14px;
+	margin-right: 10px;
+	
+	
+}
+
+#hotelList {
+	background-color: rgb(245, 244, 240);
+	width: 1144px;
+	margin: auto;
+	width: 1144px;
+	margin: auto;
+}
+
+.button {
+	background-color: rgb(21, 107, 193);
+	width: 100%;
+	height: 100%;
+	padding: 6px 16px 6px 16px;
+	color: white;
+	font-size: 16px;
+}
+
+#hoteltop {
+	width: 240px;
+	height: 110px;
+}
+
+.hotelname {
+	padding-left: 8px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.hotelstar {
+	padding-left: 8px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.hotelrating {
+	padding-left: 8px;
+	font-weight: bold;
+	color: rgb(60, 143, 0);
+	padding-top: 5px;
+}
+
+.hotelsale {
+	width: 240px;
+	height: 17px;
+	padding: 8px 0 8px 0;
+	margin-bottom: 24px;
+}
+
+.hotelprice {
+	width: 70px;
+	color: rgb(21, 107, 193);
+	border-radius: 3px;
+	border-color: rgb(21, 107, 193);
+	border-style: solid;
+	border-width: thin;
+	padding: 10px 15px 10px 15px;
+	margin: 0 0 0 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.hotelpriceWrap {
+	text-align: center;
+	margin-bottom: 13px;
+	text-align: center;
+}
+
+#jejuIsland {
+	width: 837px;
+	height: 46px;
+	display: inline-block;
+}
+
+#jejusi {
+	font-size: 30px;
+	width: 90px;
+	height: 36px;
+	margin: 15px 16px 5px 16px;
+}
+
+#specialPrice {
+	width: 279px;
+	height: 46px;
+	display: inline-block;
+	text-align: right;
+	display: inline-block;
+}
+
+.hotelBody {
+	width: 264px;
+	height: 385px;
+	background-color: white;
+	margin: 10px 0 0 11px;
+}
+
+#copyright {
+	font-size: 12px;
+	width: 735px;
+	margin: 5px 5px 5px 5px;
+	padding-bottom: 20px;
+}
+
+#footerText {
+	width: 1130px;
+	padding: 10px;
+	margin: auto;
+}
+
+.footerText2 {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contactTop {
+	display: inline-block;
+	width: 32.8%;
+	height: 96px;
+	vertical-align: top;
+	margin-bottom: 5px;
+	padding: 15px 0 10px;
+	text-align: center;
+}
+
+.contactTopP {
+	display: inline-block;
+	padding: 0 8px;
+}
+
+.contactTopP2 {
+	margin: 5px 0 10px 0;
+}
+
+.footerp {
+	margin: auto;
+}
+
+#footerTextUl1 {
+	padding-left: 2px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#footerTextUl2 {
+	padding-left: 2px;
+	font-size: 13px;
+}
+</style>
 </head>
 <body>
-		<article>
+	<!-- =================================================================================================================================== -->
+	<header>
+		<!-- 1228px -->
+		<div id="headerTopWrap">
+			<div id="headerTop">
+				<img src="hotelsLogo.png"
+					style="width: 170px; height: 50px; padding: 3px 0 3px 0; margin-right: 480px; vertical-align: middle;">
+				<!-- <div style="width:1300px; margin:0 auto">  -->
+				<select name="language">
+					<option>대한민국</option>
+					<option>France</option>
+					<option>Mexico</option>
+				</select> <select name="currency">
+					<option>KRW</option>
+					<option>USD</option>
+					<option>EUR</option>
+				</select>
+				<ul id="topUl">
+					<li><select name="help" style="width: 100px">
+							<option>도움말</option>
+							<option>예약 변경</option>
+							<option>FAQ</option>
+							<option>문의</option>
+							<option>사이트에 대한 의견</option>
+					</select></li>
+					<li><a href="#" class="topMenu"> 내 예약 정보 </a></li>
+					<li><a href="#" class="topMenu"> 회원가입 </a></li>
+					<li><a href="#" class="topMenu"> 로그인 </a></li>
+
+				</ul>
+			</div>
+		</div>
+		<div id="headerBottomWrap">
+			<div id="headerBottom">
+				<span style="padding: 0 30px 0 0; font-size: 12px"><a
+					href="#">특가 상품</a></span> <span
+					style="margin-right: 30px; font-size: 12px"><a href="#">사이트
+						이용 안내</a></span> <span style="margin-right: 30px; font-size: 12px"><a
+					href="#">숙박 시설 등록하기</a></span> <span style="font-size: 12px"><a
+					href="#">Hotels.com™호텔스닷컴 리워드</a></span>
+			</div>
+
+		</div>
+	</header>
+	<!-- =================================================================================================================================== -->
+	<nav></nav>
+	<!-- =================================================================================================================================== -->
+	<section>
+		<div id="bannerWrap">
 			<div id="banner">
-				<span style="font-size:12px">호텔</span>
-				<span style="font-size:12px">특가 상품</span>
-				<span style="font-size:12px">국내 펜션 특가</span>
-				<h1 style="color:white; font-size:30px;line-height: 36px;margin-bottom: 8px"><b>국내 펜션 특가</b></h1>
-				<p style="color:white;font-size:20px;line-height: 22px;margin-top:5px;">지금 예약하세요!</p>
-				
-				<div class="box">
-					<table>
-						<tr>
-							<th><label>목적지 또는 숙박 시설을 입력하세요.</label></th>
-							<th><label>체크인</label></th>				
-							<th><label>체크아웃</label></th>
-							<th><label>객실</label></th>
-							<th><label>성인</label></th>
-							<th><label>아동</label></th>
-						</tr>
-						<tr>
-							<th>
-								<input type="text" style="margin-left: 10px; width:300px;  height:20px"/>
-							</th>
-			
-							<th>
-								<select>
-									<option>1일</option>
-									<option>2일</option>
-									<option>3일</option>
-									<option>4일</option>
-									<option>5일</option>
-								</select>
-							</th>
-							<th>
-								<select>
-									<option>1일</option>
-									<option>2일</option>
-									<option>3일</option>
-									<option>4일</option>
-									<option>5일</option>
-								</select>
-							</th>
-							<th>
-								<select>
+				<span style="font-size: 12px; color: white">호텔</span> <span
+					style="font-size: 12px; color: white">특가 상품</span> <span
+					style="font-size: 12px; color: white">국내 펜션 특가</span>
+				<h1
+					style="color: white; font-size: 30px; line-height: 36px; margin-bottom: 8px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+					<b>국내 펜션 특가</b>
+				</h1>
+				<p
+					style="color: white; font-size: 20px; line-height: 22px; margin-top: 5px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)">지금
+					예약하세요!</p>
+				<div id="boxWrap">
+					<div class="box">
+						<div id="input">
+							<label>목적지 또는 숙박 시설을 입력하세요.</label> <br /> <input type="text"
+								style="margin-top: 5px; width: 340px; height: 20px; margin-right: 25px" />
+							<p></p>
+						</div>
+
+						<div class="check">
+							<label for="dateform">체크인</label> <br /> <input type="date" name="dateform" 
+								style="margin-top: 5px">
+							<p style="margin-top: 5px">N요일</p>
+						</div>
+						<div class="check">
+							<label><b>체크아웃</b></label> <br /> <input type="date"
+								style="margin-top: 5px">
+							<p style="margin-top: 5px">N요일</p>
+						</div>
+						<div id=stay>
+							<span>박</span>
+						</div>
+						<div id="select">
+							<div id="room">
+								<label>객실</label> <br /> <select
+									style="margin-top: 5px; height: 25px">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
 								</select>
-							</th>
-							<th>
-								<select>
+								<p></p>
+							</div>
+							<div class="age">
+								<label>성인</label> <br /> <select
+									style="margin-top: 5px; height: 25px">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
 								</select>
-							</th>
-							<th>
-								<select>
+								<p style="margin-top: 0px">만 18세 이상</p>
+							</div>
+							<div class="age">
+								<label>아동</label> <br /> <select
+									style="margin-top: 5px; height: 25px">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
 								</select>
-							</th>
-						</tr>
-						
-					</table>
+								<p style="margin-top: 0px">만 17세 이하</p>
+							</div>
+						</div>
+						<div id="searchWrap">
+							<!-- 제주도 특가보기 -->
+							<a href="#" id="search"> 검색 </a>
+						</div>
+					</div>
 				</div>
 			</div>
-					
-			
-		</article>
+		</div>
+		<div class="box2-1">
+			<div class="box2-2">
+				<div style="display: inline-block; height: 39px;">
+					<img src="http://placehold.it/20x20" style="margin-top: 8px">
+					<span>대부분의 호텔</span> <span
+						style="color: rgb(69, 143, 0); height: 39px"><strong>무료
+							취소</strong></span>
+				</div>
+				<div style="display: inline-block; height: 39px">
+					<img src="http://placehold.it/20x20" style="margin-top: 8px">
+					<span>대부분의 객실</span> <span
+						style="color: rgb(69, 143, 0); height: 39px"><strong>지금
+							결제 또는 현장 결제 옵션</strong></span>
+				</div>
+				<div style="display: inline-block; height: 39px">
+					<img src="http://placehold.it/20x20" style="margin-top: 8px">
+					<span style="color: rgb(0, 55, 137);"><strong>가격 보장</strong></span>
+				</div>
+			</div>
+		</div>
+		<div id="city">
+			<ul style="list-style: none; padding: 0 10px 0 0">
+				<li class="nav"><a href="#" style="color: #156bc1;">제주시</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">서귀포</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">강릉</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">여수</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">경주</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">평창</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">양양</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">거제</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">가평</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">남해</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">통영</a></li>
+				<li class="nav"><a href="#" style="color: #156bc1;">태안</a></li>
+			</ul>
+		</div>
+		<!-- ------------------------------------------------------------제주도-------------------------------------------------------------------------------->
+		<div id="hotelList">
+			<div>
+				<!-- 제주도 이름전체 -->
+				<div id="jejuIsland">
+					<!-- 제주도 이름 -->
+					<p id="jejusi">제주시</p>
+				</div>
 
+
+
+				<div id="specialPrice">
+					<!-- 제주도 특가보기 -->
+					<a href="#" class="button"> 특가 상품 모두 보기 </a>
+				</div>
+			</div>
+
+
+			<div style="padding: 0 0 0 10px">
+				<!-- 펜션리스트 몸통 -->
+				<div style="display: inline-block;">
+					<!-- 펜션1 틀 -->
+					<div class="hotelBody">
+						<!-- 펜션1 몸통 -->
+						<img
+							src="https://exp.cdn-hotels.com/hotels/20000000/19770000/19764600/19764575/3683e83d_b.jpg"
+							style="width: 248px; height: 146px; padding: 8px 0 0 8px;" />
+						<div id="hoteltop">
+							<div class="hotelname">반하크라펜션</div>
+							<span class="hotelstar">3.5성급</span>
+							<div class="hotelrating">
+								<!-- 평점 -->
+								<span>훌륭함</span> <span>8.8</span> <span>/ 10</span>
+							</div>
+						</div>
+						<div class="hotelsale">
+							<!-- 할인 -->
+						</div>
+						<div class="hotelpriceWrap">
+							<span class="hotelprice"><a href="#">가격 보기</a></span>
+						</div>
+					</div>
+				</div>
+				<div style="display: inline-block;">
+					<!-- 펜션1 틀 -->
+					<div class="hotelBody">
+						<!-- 펜션1 몸통 -->
+						<img
+							src="https://exp.cdn-hotels.com/hotels/20000000/19220000/19211200/19211197/fd2c7e42_b.jpg"
+							style="width: 248px; height: 146px; padding: 8px 0 0 8px;" />
+						<div id="hoteltop">
+							<div class="hotelname">송당송당 펜션앤리조트</div>
+							<span class="hotelstar">3성급</span>
+							<div class="hotelrating">
+								<!-- 평점 -->
+								<span>매우 좋음</span> <span>8.0</span> <span>/ 10</span>
+							</div>
+						</div>
+						<div class="hotelsale">
+							<!-- 할인 -->
+						</div>
+						<div class="hotelpriceWrap">
+							<span class="hotelprice"><a href="#">가격 보기</a></span>
+						</div>
+					</div>
+				</div>
+				<div style="display: inline-block;">
+					<!-- 펜션1 틀 -->
+					<div class="hotelBody">
+						<!-- 펜션1 몸통 -->
+						<img
+							src="https://exp.cdn-hotels.com/hotels/16000000/15140000/15136100/15136019/6ad2f0e7_b.jpg"
+							style="width: 248px; height: 146px; padding: 8px 0 0 8px;" />
+						<div id="hoteltop">
+							<div class="hotelname">허브인휴양펜션</div>
+							<span class="hotelstar">2.5성급</span>
+							<div class="hotelrating">
+								<!-- 평점 -->
+								<span>좋음</span> <span>7.6</span> <span>/ 10</span>
+							</div>
+						</div>
+						<div class="hotelsale">
+							<!-- 할인 -->
+						</div>
+						<div class="hotelpriceWrap">
+							<span class="hotelprice"><a href="#">가격 보기</a></span>
+						</div>
+					</div>
+				</div>
+				<div style="display: inline-block;">
+					<!-- 펜션1 틀 -->
+					<div class="hotelBody">
+						<!-- 펜션1 몸통 -->
+						<img
+							src="https://exp.cdn-hotels.com/hotels/15000000/14730000/14728400/14728344/b36e08f4_b.jpg"
+							style="width: 248px; height: 146px; padding: 8px 0 0 8px;" />
+						<div id="hoteltop">
+							<div class="hotelname">뷰타워 리조트</div>
+							<span class="hotelstar">3성급</span>
+							<div class="hotelrating">
+								<!-- 평점 -->
+								<span>좋음</span> <span>7.4</span> <span>/ 10</span>
+							</div>
+						</div>
+						<div class="hotelsale">
+							<!-- 할인 -->
+						</div>
+						<div class="hotelpriceWrap">
+							<span class="hotelprice"><a href="#">가격 보기</a></span>
+						</div>
+					</div>
+				</div>
+				<div>
+					<!-- 펜션1 틀 -->
+					<div class="hotelBody">
+						<!-- 펜션1 몸통 -->
+						<img
+							src="https://exp.cdn-hotels.com/hotels/18000000/17730000/17728900/17728850/47537f95_b.jpg"
+							style="width: 248px; height: 146px; padding: 8px 0 0 8px;" />
+						<div id="hoteltop">
+							<div class="hotelname">해변풍경펜션</div>
+							<span class="hotelstar">3성급</span>
+							<div class="hotelrating">
+								<!-- 평점 -->
+								<span>좋음</span> <span>7.0</span> <span>/ 10</span>
+							</div>
+						</div>
+						<div class="hotelsale">
+							<!-- 할인 -->
+						</div>
+						<div class="hotelpriceWrap">
+							<span class="hotelprice"><a href="#">가격 보기</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				style="width: 1116px; height: 38px; text-align: right; padding: 0 10px 0 10px; margin: 0 0 0 0">
+				<!-- 제주도 특가 하단 -->
+				<a href="#" class="button"> 특가 상품 모두 보기 </a>
+			</div>
+			<hr style="margin: 0 0 0 0;" />
+			<!-- --------------------------------------------------------------------제주도 끝 ---------------------------------------------------------------------->
+			<div style="height: 100px">
+				<!-- 이용약관 -->
+				<div>
+					<p style="font-size: 20px; margin: 20px 0 20px 20px">이용약관</p>
+
+					<p style="font-size: 11px; margin: 0 30px 40px 20px;">각 호텔에 대한
+						자세한 내용은 위에서 관심 있는 호텔을 클릭하여 확인해 주시기 바랍니다. 여행 날짜를 입력하시면 해당 기간에 적용되는
+						할인 가격을 조회하실 수 있습니다. 이 프로모션 페이지에서 홍보하는 호텔 할인 요금은 일부 호텔에만 적용되며 모든
+						요금은 이용 가능 여부에 따라 다릅니다. 홈페이지에서 검색하여 할인 호텔 요금을 확인하실 수도 있습니다. 요금은 2인실
+						1개 기준이며, 모든 세금과 수수료를 포함합니다.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- =================================================================================================================================== -->
+
+	</section>
+	<footer style="width: 1160px; margin: 0 auto;">
+
+		<div id="contact" style="margin: auto; width: 1160px;">
+			<h2
+				style="width: 1160px; text-align: center; font-size: 16px; font-weight: normal; margin: auto; padding: 20px 0 10px 0;">다음
+				중 하나를 선택해 저렴하게 예약하세요!</h2>
+
+			<a href="#" class="contactTop"
+				style="color: rgb(211, 47, 47); height: 71px; border-right: 1px solid #d1d1d1">
+				<img src="http://placehold.it/40x40" style="vertical-align: middle;">
+				<p class="contactTopP" style="margin: 8px 0 10px 0; font-size: 24px">이메일</p>
+				<p class="cnatactTopP2">최신 프로모션 뉴스레터를 구독하세요.</p>
+			</a> <a href="#" class="contactTop"
+				style="color: rgb(59, 89, 152); height: 71px; border-right: 1px solid #d1d1d1">
+				<img src="http://placehold.it/40x40" style="vertical-align: middle;">
+				<p class="contactTopP" style="margin: 8px 0 10px 0; font-size: 24px">Hotels.com
+					앱</p>
+				<p class="cnatactTopP2">앱을 다운로드하여 언제 어디서나 편리하게 예약하세요.</p>
+			</a> <a href="#" class="contactTop"
+				style="color: rgb(123, 31, 162); height: 71px"> <img
+				src="http://placehold.it/40x40" style="vertical-align: middle;">
+				<p class="contactTopP" style="font-size: 15px">Hotels.com™호텔스닷컴
+					리워드</p>
+				<p class="cnatactTopP2">지금 바로 가입하세요! 스템프 10개를 모으면 리워드* 1박!</p>
+			</a>
+
+		</div>
+
+		<div id="footerText">
+			<!--틀 -->
+			<div>
+				<ul id="footerTextUl1">
+					<li class="footerText2">인기 목적지</li>
+					<li class="footerText2">인기 국가 및 지역</li>
+					<li class="footerText2">지원 및 자주 묻는 질문</li>
+					<li class="footerText2">공급업체, 제휴사, 미디어 해당 섹션</li>
+					<li class="footerText2">이용약관 및 개인정보 보호정책</li>
+					<li class="footerText2">사이트에 대한 의견</li>
+					<li class="footerText2">회사소개</li>
+					<li class="footerText2">숙박 시설 등록하기</li>
+					<li class="footerText2">채용</li>
+				</ul>
+				<ul id="footerTextUl2">
+					<li style="display: inline-block;"><a href="#">여행 가이드</a>ㅣ</li>
+					<li style="display: inline-block;"><a href="#">50개 인기 도시</a>ㅣ</li>
+					<li style="display: inline-block;"><a href="#">모든 국가</a>ㅣ</li>
+					<li style="display: inline-block;"><a href="#">사이트 색인</a></li>
+				</ul>
+			</div>
+			<div id="copyright">
+				<p class="footerp">* 일부 호텔은 체크인 24시간 이상 전에 취소해야 합니다. 자세한 내용은
+					사이트에서 확인해 주세요.</p>
+				<p class="footerp">* 리워드 1박의 금액은 적립하신 스탬프 10개의 평균 요금입니다. 세금 및
+					서비스 요금이 포함되지 않습니다. 사용하시는 각 리워드 숙박에 대해 ₩5,500의 수수료가 적용되지만 앱에서 사용 시
+					수수료가 없습니다. 제외 사항이 적용됩니다.이용약관 보기리워드 숙박에 도달하는 데 걸리는 평균 시간에 대한 참조는
+					2018년 1월 1일 ~ 2019년 12월 31일에 10번째 스탬프에 도달한 회원 고객의 데이터를 기반으로 합니다. 추가
+					혜택은 다를 수 있으며 VIP Access 숙박 시설에서만 이용 가능할 수 있습니다. 가격 보장 플러스는 패키지에
+					적용되지 않으며(판매되는 경우) Hotels.com에서 객실을 결제하고 체크인 시까지 Hotels.com 또는 다른
+					웹사이트에서 동일한 객실과 동일한 일정에 대해 더 저렴한 요금을 발견하신 경우 이용하실 수 있습니다. 더 저렴한 요금을
+					Hotels.com에서 찾으신 경우 결제된 요금이 환불되며, 더 저렴한 요금을 다른 웹사이트에서 발견하신 경우에는 차액을
+					환불해 드립니다.</p>
+				<p class="footerp">© 2021 Hotels.com은 Expedia Group 계열사입니다. All
+					rights reserved.</p>
+				<p class="footerp">Hotels.com 및 Hotels.com 로고는 미국 및/또는 다른 국가에서
+					Hotels.com, LP의 상표 또는 등록 상표입니다. 기타#bo 모든 상표는 해당 소유권자의 자산입니다.</p>
+				<p class="footerp">서울시 종로구 종로5길 Tower8 9층, Tel: 02-3480-0145,
+					Mail: CS@koreasupport.hotels.com</p>
+				<p class="footerp">트래블 파트너 익스체인지 코리아 주식회사 | 사업자등록번호 821-88-01025
+					| 대표이사: 김상범</p>
+				<p class="footerp">
+					(주) 호텔스닷컴코리아 |사업자등록번호 : 717-81-00091ㅣ<a href="#">사업자정보확인</a>ㅣ통신판매업신고번호
+					: 2015-서울종로-1067호
+				</p>
+				<p class="footerp">이 웹사이트에서 진행하신 예약과 관련한 문의사항은 [고객서비스
+					02-3480-0145]로 연락 주시기 바랍니다.</p>
+				<p class="footerp">호텔스닷컴 웹사이트를 통해 구매할 수 있는 게재 상품 및 서비스에 대한 정보는
+					판매자에 의해 제공됩니다. 따라서 호텔스닷컴은 이와 관련된 정보의 정확성과 완전성 여부에 대해 책임을 지지 않습니다.</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

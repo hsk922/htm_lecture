@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>러닝 - 나이키</title>
+	<style>
+		html {
+			margin:0;
+		}
+		body {
+			margin:0;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		ul {
+			list-style: none;
+			margin:0;
+			padding:0;
+		}
+
+		header{
+			
+			height: 96px;
+
+		}
+		
+		#herderTop{
+			
+			background-color: rgb(245 245 245);
+			height: 36px;
+			padding: 0 37px;
+		}
+		
+		#headerLogo{
+			display: inline-block;
+			width: 50px;
+			height: 36px;
+			margin:0 5px;
+		}
+		.headerTopText{
+			
+			line-height: 36px;
+			display: flex;
+			padding: 0 10px;
+			font-size: 12px;
+
+		}
+		#headerTopTextWrap {
+			
+			width: 200px;
+			height: 36px;
+			text-align: right;
+			float: right;
+			display: flex;
+			vertical-align: middle;
+			
+			
+		}
+		
+		#headerBottom {
+			
+			height: 60px;
+			padding:0 38px 0 36px;
+		}
+		#logoWrap{
+			width:25%;
+			display: inline-block;
+		}
+		#menuWrap{
+			width:50%;
+			display: inline-block;
+			margin:0 auto;
+			vertical-align: top;
+			text-align: center;
+		}
+		.menuText {
+			 display:inline-block;
+			 padding:19.5px 12px;
+			 position: relative;
+			 vertical-align: middle;
+			 font-weight: 600;
+		
+		}
+		
+		
+		
+		#headerSearch {
+			background-color: rgb(245 245 245);
+			font-size: 16px;
+			width: 100px;
+			border: thick;
+		
+		}
+		#searchWrap {
+			
+			width:17%;
+			display: inline-block;
+			vertical-align: top;
+			margin:12.5px 0px;
+			
+		}
+		
+		
+		#search {
+			background-color: rgb(245 245 245);
+			width: 180px;
+			height: 35px;
+			border: thick;
+			border-radius:20px;
+			border-color:rgb(245 245 245);
+			position: relative;
+			vertical-align: middle;
+			display: inline-block; 
+			text-align: left;
+			
+		}
+		
+		#topButton {
+			vertical-align: top;
+			width: 6%;
+			margin: 10px 0;
+			display: inline-block;
+			float: right;
+			
+		}
+		#sectionTop {
+			padding:40px 48px 30px;
+			/* position: fixed; */
+		}
+		#selectedNameWrap {
+		
+			font-size: 14px;
+			width: 70%;
+		}
+	
+		#sectionName {
+			display: inline-block;
+			width: 70%;
+		}
+		
+		
+		h1 {
+			font-size: 20px;
+			font-weight: 500;
+			margin: 0 ;
+			
+			
+		}
+		#sectionTopButton {
+			width: 200px;
+			
+			
+			
+		}
+		
+		#sectionTopButtonWrap {
+			display: inline-block;
+			width: 28%;
+			
+		
+		}
+		#side{
+			width:192px;
+			display: inline-block;
+			padding: 0 48px;
+		}
+		.sideMenuA{
+			font-size: 15px;
+			padding: 7px 0;
+		}
+		.sideLiNow{
+			width: 192px;
+			padding-left: 14px;
+			display: flex;
+		}
+		
+		.sideLi {
+			width: 192px;
+			display: flex;
+			
+		}
+		
+		
+		#mainBody {
+			width:79%;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+		}
+		#link {
+			margin-bottom: 40px;
+		}
+		#linkP{
+			width: 75px; 
+			border-right: 1px solid #d1d1d1;
+			font-size: 14px;	 
+			text-align: center;
+			padding: 0 10px;
+		}
+		#linkP2{
+			width: 90px; 
+			font-size: 14px;
+			text-align: center;
+			padding: 0 10px;
+		}
+		.linkLi {
+			padding:5px 0; 
+			display: inline-block;
+		}
+		.productWrap {
+			width:31%;
+			height:660px;
+			padding:0 8px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.product {
+			height:660px;
+		}
+		.productInfo {
+			width:64%;
+			text-align:left;
+			display: inline-block;
+
+		}
+		.info1 {
+			margin:0;
+
+		}
+		.info2 {
+			margin:5px 0;
+			color: #8d8d8d;
+		}
+		.infoWrap {
+			margin: 10px 0;
+		}
+		.productPriceWrap {
+			width:34%;
+			margin:0;
+			display: inline-block;
+			position: relative;
+			vertical-align: top;
+		}
+		.productPrice {
+			size: 16px;
+			margin: 0;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<header>
+		<div id="herderTop">
+			<ul id="headerLogo">
+				<li>
+					<a href="#" style="height: 36px;">
+						<img src="jordanLogo.png" style="height: 25px;padding: 5.5px 12px">
+					</a>
+				</li>
+			</ul>
+			<div id="headerTopTextWrap">
+				<ul style="display: flex;text-align: right;">
+					<li style="display: inline-block;">
+						<a href="#" class="headerTopText">고객센터</a>
+					</li>
+					<li style="display: inline-block;">
+						<a href="#" style="display: inline-block ;line-height: 36px; font-size: 12px;">
+						<span style=" padding: 0 10px;border-right: 1px solid;border-left:  1px solid;border-color: black;">멤버 가입</span></a>
+					</li>
+					<li style="display: inline-block;">
+						<a href="#" class="headerTopText">로그인</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="headerBottom">
+			<div id="logoWrap">
+				<a href="#" style="display:inline-block;height: 60px; padding:0 12px;">
+					<img src="NikeLogo.png" style=" width: 60px; height: auto;margin:16px 0 ">
+				</a>
+			</div>
+			
+			<ul id="menuWrap">
+				<li style="display: inline-block;">
+					<a href="#" class="menuText">New Releases</a>
+				</li>
+				<li style="display: inline-block;">
+					<a href="#" class="menuText">Men</a>
+				</li>
+				<li style="display: inline-block;">
+					<a href="#" class="menuText">Women</a>
+				</li>
+				<li style="display: inline-block;">
+					<a href="#" class="menuText">Kids</a>
+				</li>
+				<li style="display: inline-block;">
+					<a href="#" class="menuText">Sale</a>
+				</li>
+			</ul>
+			
+			<div align="right" id="searchWrap">
+				<div id="search">
+					<button style="border-radius: 20px;border: thick;width: 35px;height: 35px;vertical-align:middle; "><img src="ddd.png" style="width:auto; height: 25px;"> </button>
+					<input type="text" placeholder="   검색" id="headerSearch">
+				</div>
+			</div>
+			<div align="right" id="topButton">
+				<a href="#" style="margin-right: 10px"><img src="heart.png" style="width:auto; height:20px;position: relative;vertical-align: top;margin: 7px 0 0 0;"></a>
+				<a href="#" ><img src="bag1.png" style="width:auto; height:30px; "></a>
+			</div>
+			
+		</div>
+
+	</header>
+	<section>
+		<div id="sectionTop">
+			<div id="selectedNameWrap">
+				<a href="#">Men</a>
+				<a href="#">/ 신발</a>
+			</div>	
+		
+			<div id="sectionName">
+				<h1>Men's 러닝</h1>
+			</div>
+			<div align="right" id="sectionTopButtonWrap">
+				<div id="sectionTopButton">
+					<button style="border:thick; ;background-color: white;font-size: 15px;font-weight: bold; ;padding: 0 20px">FILTER</button>
+					<select name="sort" id="" style="border:thick;font-size: 14px;font-weight: bold;">
+						<option value="신상품순">신상품순</option>
+						<option value="높은 가격순">높은 가격순</option>
+						<option value="낮은 가격순">낮은 가격순</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div id="side">
+			<ul>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">신발 전체</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">라이프스타일</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">러닝</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">트레이닝 & 짐</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">농구</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">조던</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">축구</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">스케이트보딩</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">골프</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">테니스</a></li>
+				<li class="sideLiNow"><a href="#" class="sideMenuA">샌들 & 슬리퍼</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">의류 전체</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">아우터웨어</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">후디 & 크루</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">팬츠 & 타이츠</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">탑 & 티셔츠</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">숏 팬츠</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">나이키 프로</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">양말</a></li>
+				<li class="sideLi"><a href="#" class="sideMenuA">셋업</a></li>
+
+			</ul>
+		</div>
+		<div id="mainBody">
+		
+			<div id="link">
+				<ul style="margin:0">
+					<li class="linkLi" style="border-bottom: 2px solid"><p id="linkP"><a href="#" style="color:black; font-weight: bold; ;">전체보기</a></p></li>
+					<li class="linkLi"><p id="linkP"><a href="#" style="color: #888">줌</a></p></li>
+					<li class="linkLi"><p id="linkP"><a href="#" style="color: #888">리액트</a></p></li>
+					<li class="linkLi"><p id="linkP"><a href="#" style="color: #888">프리</a></p></li>
+					<li class="linkLi"><p id="linkP"><a href="#" style="color: #888">조이라이드</a></p></li>
+					<li class="linkLi"><p id="linkP2"><a href="#" style="color: #888">러닝화 가이드</a></p></li>
+				</ul>
+			</div>
+			<div>
+				<ul style="margin:0;padding:0;">
+					<li class="productWrap">
+						<div class="porduct">
+							<img src="https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CT2357-002/f156a607-e66c-477c-9350-7f0e5decb7f7_primary.jpg?gallery" style="max-width:100%;height:auto;">
+							<div class="infoWrap">
+								<div class="productInfo">
+									<p class="info1">나이키 리액트 인피니티 런 플라이니트2</p>
+									<p class="info2">남성 신발 러닝</p>
+									<p class="info2">6 컬러</p>
+								</div>
+								<div class="productPriceWrap">
+									<p class="productPrice">179,000</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="productWrap">
+						<div class="porduct">
+							<img src="https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/category/10002/IWC_Nike-React-Infinity-Run-2_586x800_MEN.jpg" style="max-width:100%;height:auto;">
+
+						</div>
+					</li>
+					<li class="productWrap">
+						<div class="porduct">
+							<img src="https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CT2357-600/95d7cf54-f75a-46de-a762-98856c1c566a_primary.jpg?gallery" style="max-width:100%;height:auto;">
+							<div class="productInfo">
+								<p class="info1">나이키 리액트 인피니티 런 플라이니트2</p>
+								<p class="info2">남성 신발 러닝</p>
+								<p class="info2">6 컬러</p>
+							</div>
+						</div>
+					</li>
+										<li class="productWrap">
+						<div class="porduct">
+							<img src="https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/BQ9646-011/777b71bc-e8a3-46e9-a1d1-3c38c107c1bf_primary.jpg?gallery" style="max-width:100%;height:auto;">
+							<div class="infoWrap">
+								<div class="productInfo">
+									<p class="info1">나이키 에어 줌 페가수스 37</p>
+									<p class="info2">남성 신발 러닝</p>
+									<p class="info2">9 컬러</p>
+								</div>
+								<div class="productPriceWrap">
+									<p class="productPrice">139,000</p>
+								</div>
+							</div>
+						</div>
+					</li>					<li class="productWrap">
+						<div class="porduct">
+							<img src="https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CU1855-200/7c461d35-26ec-4008-86fa-351ccd6f86bd_primary.jpg?gallery" style="max-width:100%;height:auto;">
+							<div class="infoWrap">
+								<div class="productInfo">
+									<p class="info1">나이키 에어 줌 보메로 15</p>
+									<p class="info2">남성 신발 러닝</p>
+									<p class="info2">4 컬러</p>
+								</div>
+								<div class="productPriceWrap">
+									<p class="productPrice">179,000</p>
+								</div>
+							</div>
+						</div>
+					</li>					<li class="productWrap">
+						<div class="porduct">
+							<img src="https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CT2357-200/f4167a06-bdfe-497e-9704-e0c1309f9588_primary.jpg?gallery" style="max-width:100%;height:auto;">
+							<div class="infoWrap">
+								<div class="productInfo">
+									<p class="info1">나이키 리액트 인피니티 런 플라이니트2</p>
+									<p class="info2">남성 신발 러닝</p>
+									<p class="info2">6 컬러</p>
+								</div>
+								<div class="productPriceWrap">
+									<p class="productPrice">179,000</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	
+	</section>
+	<footer style="background-color: rgb(17 17 17);height: 554px;">
+		
+	</footer>
+	
+</body>
+</html>
