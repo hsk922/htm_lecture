@@ -972,7 +972,35 @@
 				</div>
 				<!-- 테이블 밑 버튼 -->
 				<!-- --------------------------------------------------------하단 버튼 --------------------------------------------------------------------------------- -->
-				<div class="row" style="margin:20px 0 10px 0;">
+				<nav style="padding: 20px 43% 0 43%;margin:0 auto;">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous"style="padding:0 15px 0 5px;">
+								<span aria-hidden="true"style="color: #212529;letter-spacing:-10px;">&ltrif;&ltrif; </span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous"style="padding:0 8px;">
+								<span aria-hidden="true"style="color: #212529;">&ltrif;</span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#"style="padding:0 10px;color: #212529;">1</a></li>
+						<li class="page-item"><a class="page-link" href="#"style="padding:0 10px;color: #212529;">2</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next"style="padding:0 8px;">
+								<span aria-hidden="true"style="color: #212529;">&rtrif;</span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next"style="padding:0 15px 0 5px;">
+								<span aria-hidden="true"style="color: #212529;letter-spacing:-10px;">&rtrif;&rtrif;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				
+				
+				<div class="row" style="margin:0px 0 10px 0;">
 				
 					<div class="col" style="text-align: left;">
 						<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">좌측버튼1</button>
@@ -1159,11 +1187,17 @@
 									
 									
 									
-									<div class="modal-footer"  style="margin:0 auto;border:none;">
+									<div class="row modal-footer"  style="margin:0;border:none; padding:0;">
 						<!-- 				<button type="button" class="btn btn-secondary"data-bs-dismiss="modal">취소</button>
 										<button type="button" class="btn btn-primary">확인</button> -->
-										<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
-										<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+										<div class="col" style="text-align: left;">
+											<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+											<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
+										</div>
+										<div class="col" style="text-align: right;">
+											<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
+											<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1172,32 +1206,7 @@
 					</div>
 				</div>
 				<!-- 여기 가운데 정렬 하고싶은데 방법을 몰라서 패딩으로 강제로 잡았습니다. -->
-				<nav style="padding: 10px 45%;margin:0 auto;">
-					<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Previous"style="padding:0 15px 0 5px;">
-								<span aria-hidden="true"style="color: #212529;letter-spacing:-10px;">&ltrif;&ltrif; </span>
-							</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Previous"style="padding:0 8px;">
-								<span aria-hidden="true"style="color: #212529;">&ltrif;</span>
-							</a>
-						</li>
-						<li class="page-item"><a class="page-link" href="#"style="padding:0 10px;color: #212529;">1</a></li>
-						<li class="page-item"><a class="page-link" href="#"style="padding:0 10px;color: #212529;">2</a></li>
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Next"style="padding:0 8px;">
-								<span aria-hidden="true"style="color: #212529;">&rtrif;</span>
-							</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Next"style="padding:0 15px 0 5px;">
-								<span aria-hidden="true"style="color: #212529;letter-spacing:-10px;">&rtrif;&rtrif;</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
+				
 				
 			</div>
 
