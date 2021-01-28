@@ -271,7 +271,7 @@
     	
     	
 	</style>
-	<style>
+	<style type="text/css">
 		.join-name {
 			font-size: 11px;
 			font-weight: 600;
@@ -708,7 +708,7 @@
 												<span style="color: red">*</span>
 											</div>
 											<div class="col join-info-password-back">
-												<input type="text" class="join-inputBox-1" />
+												<input type="password" class="join-inputBox-1" />
 												<span class="join-example">* 알파벳 소문자, 숫자 포함 8자 이상 30자 이하</span>
 											</div>
 											<div class="col-2 join-info-password-front2">
@@ -716,7 +716,7 @@
 												<span style="color: red">*</span>
 											</div>
 											<div class="col join-info-password-back">
-												<input type="text" class="join-inputBox-1" />
+												<input type="password" class="join-inputBox-1" />
 											</div>
 										</div>
 										<div class="row" id="join-info-mail-wrap">
@@ -726,12 +726,12 @@
 											<div class="col" id="join-info-mail-back">
 												<input type="text" class="join-inputBox-2" />
 												<span>@</span>
-												<input type="text" class="join-inputBox-2" />
+												<input type="text" class="join-inputBox-2"/>
 												<select style="height: 20px;font-size: 12px; border-color:rgb(175 175 175)">
-													<option value="" selected>직접입력</option>
-													<option value="">naver.com</option>
-													<option value="">daum.net</option>
-													<option value="">gamil.com</option>
+													<option value="direct" selected>직접입력</option>
+													<option value="naver.com">naver.com</option>
+													<option value="daum.net">daum.net</option>
+													<option value="gmail.com">gamil.com</option>
 												</select>
 											</div>
 										</div>
@@ -843,11 +843,11 @@
 								<div class="row modal-footer"  style="margin:0 auto;border:none; padding:0;">
 					<!-- 				<button type="button" class="btn btn-secondary"data-bs-dismiss="modal">취소</button>
 									<button type="button" class="btn btn-primary">확인</button> -->
-									<div class="col">
+									<div class="col" style="margin-left: 10px">
 										<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
 										<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
 									</div>
-									<div class="col" style="text-align: right;">
+									<div class="col" style="text-align: right;margin-right: 10px">
 										<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
 										<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
 									</div>
