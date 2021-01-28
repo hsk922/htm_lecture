@@ -878,32 +878,27 @@
 			<!-- 검색결과 부분 -->
 			<div id="main-searchResult">
 			
-				<div id="main-searchResult-top">
-					<span>검색결과 : </span>
-					<span style="font-weight: 600;">13</span>
-					<span>/ 총</span>
-					<span style="font-weight: 600;">13</span>
-					<span>명 검색결과를 </span>
-					<a href="#">엑셀저장></a>
+				<div  id="main-searchResult-top" style="width:100%">
+					<div   id="main-searchResult-top-front" style="display: inline-block; ">
+						<span>검색결과 : </span>
+						<span style="font-weight: 600;">13</span>
+						<span>/ 총</span>
+						<span style="font-weight: 600;">13</span>
+						<span>명 검색결과를 </span>
+						<a href="#">엑셀저장></a>
+					</div>
+					<div  id="main-searchResult-top-back" style="float: right;" >
+						<select>
+							<option value="">VIEW</option>
+							<option value="">10</option>
+							<option value="">20</option>
+							<option value="">30</option>
+							<option value="">50</option>
+							<option value="">100</option>
+						</select>
+					</div>
 				</div>
-<!-- 				<div class="btn-group table-button-guoup" >
-					<button type="button" class="btn-primary table-button">VIEW</button>
-					<button type="button" class="btn-primary table-button">10</button>
-					<button type="button" class="btn-primary table-button">20</button>
-					<button type="button" class="btn-primary table-button">30</button>
-					<button type="button" class="btn-primary table-button">50</button>
-					<button type="button" class="btn-primary table-button">100</button>
-				</div> -->  <!-- 해야 할 부분 -->
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+
 				<!-- 테이블 -->
 				<div id="main-searchResult-table-full">
 					<table id="main-table">
@@ -1035,201 +1030,208 @@
 					</table>
 				</div>
 				<!-- 테이블 밑 버튼 -->
-				<div id="main-bottom-button-wrap">
-					<!-- Button trigger modal -->
-					<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">회원등록</button>
-	
-					<!-- Modal -->
-					<div class="modal fade " id="staticBackdrop"
-						data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="staticBackdropLabel" aria-hidden="true">
-						<div class="modal-dialog modal-xl">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="staticBackdropLabel">§ 사용자 추가</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<div class="join-name">
-										&#x02666; 사용자 정보 입력
+				<!-- --------------------------------------------------------하단 버튼 --------------------------------------------------------------------------------- -->
+				<div class="row" style="margin:20px 0 10px 0;">
+				
+					<div class="col" style="text-align: left;">
+						<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">좌측버튼1</button>
+						<button class="main-bottom-button-2">좌측버튼2</button>
+					</div>
+						
+					<div class="col" style="text-align: right;">
+						<!-- Button trigger modal -->
+						<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">회원등록</button>
+		
+						<!-- Modal -->
+						<div class="modal fade " id="staticBackdrop"
+							data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="staticBackdropLabel" aria-hidden="true">
+							<div class="modal-dialog modal-xl">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="staticBackdropLabel">§ 사용자 추가</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
 									</div>
-									<div id="join-top">
-										<div class="row"	id="join-info-id-wrap">
-											<div class="col-2" id="join-info-id-front">
-												<span>아이디</span>
-												<span style="color: red">*</span>
-											</div>
-											<div class="col" id="join-info-id-back">
-												<input type="text" class="join-inputBox-1"/>
-												<a href="#" style="font-size: 11px;text-underline-position: under; " >중복체크</a>
-											</div>
+									<div class="modal-body">
+										<div class="join-name">
+											&#x02666; 사용자 정보 입력
 										</div>
-										<div class="row" id="join-info-name-wrap">
-											<div class="col-2" id="join-info-name-front">
-												<span>이름</span>
-												<span style="color: red">*</span>
+										<div id="join-top">
+											<div class="row"	id="join-info-id-wrap">
+												<div class="col-2" id="join-info-id-front">
+													<span>아이디</span>
+													<span style="color: red">*</span>
+												</div>
+												<div class="col" id="join-info-id-back">
+													<input type="text" class="join-inputBox-1"/>
+													<a href="#" style="font-size: 11px;text-underline-position: under; " >중복체크</a>
+												</div>
 											</div>
-											<div class="col" id="join-info-name-back">
-												<input type="text" class="join-inputBox-1" />
-											</div>										
-										</div>
-										<div class="row" id="join-info-passowrd-wrap">
-											<div class="col-2 join-info-password-front">
-												<span>비밀번호</span>
-												<span style="color: red">*</span>
+											<div class="row" id="join-info-name-wrap">
+												<div class="col-2" id="join-info-name-front">
+													<span>이름</span>
+													<span style="color: red">*</span>
+												</div>
+												<div class="col" id="join-info-name-back">
+													<input type="text" class="join-inputBox-1" />
+												</div>										
 											</div>
-											<div class="col join-info-password-back">
-												<input type="text" class="join-inputBox-1" />
-												<span class="join-example">* 알파벳 소문자, 숫자 포함 8자 이상 30자 이하</span>
+											<div class="row" id="join-info-passowrd-wrap">
+												<div class="col-2 join-info-password-front">
+													<span>비밀번호</span>
+													<span style="color: red">*</span>
+												</div>
+												<div class="col join-info-password-back">
+													<input type="text" class="join-inputBox-1" />
+													<span class="join-example">* 알파벳 소문자, 숫자 포함 8자 이상 30자 이하</span>
+												</div>
+												<div class="col-2 join-info-password-front">
+													<span>비밀번호 확인</span>
+													<span style="color: red">*</span>
+												</div>
+												<div class="col join-info-password-back">
+													<input type="text" class="join-inputBox-1" />
+												</div>
 											</div>
-											<div class="col-2 join-info-password-front">
-												<span>비밀번호 확인</span>
-												<span style="color: red">*</span>
+											<div class="row" id="join-info-mail-wrap">
+												<div class="col-2" id="join-info-mail-front">
+													<span>이메일</span>
+												</div>
+												<div class="col" id="join-info-mail-back">
+													<input type="text" class="join-inputBox-2" />
+													<span>@</span>
+													<input type="text" class="join-inputBox-2" />
+													<select style="height: 20px;font-size: 12px; border-color:rgb(175 175 175)">
+														<option value="" selected>직접입력</option>
+														<option value="">naver.com</option>
+														<option value="">daum.net</option>
+														<option value="">gamil.com</option>
+													</select>
+												</div>
 											</div>
-											<div class="col join-info-password-back">
-												<input type="text" class="join-inputBox-1" />
+											<div class="row" id="join-info-phoneNumber-wrap">
+												<div class="col-2" id="join-info-phoneNumber-front">
+													<span>휴대폰</span>
+												</div>
+												<div class="col" id="join-info-phoneNumber-back">
+													<select style="height: 20px;font-size: 12px; border-color:rgb(175 175 175)">
+														<option value="" selected>선택</option>
+														<option value="">010</option>
+														<option value="">011</option>
+														<option value="">016</option>
+														<option value="">017</option>
+														<option value="">019</option>
+													</select>
+													<span>-</span>
+													<input type="text" class="join-inputBox-3" />
+													<span>-</span>
+													<input type="text" class="join-inputBox-3" />
+												</div>
 											</div>
-										</div>
-										<div class="row" id="join-info-mail-wrap">
-											<div class="col-2" id="join-info-mail-front">
-												<span>이메일</span>
+											<div class="row" id="join-info-department-wrap">
+												<div class="col-2" id="join-info-department-front">
+													<span>소속(부서/팀)</span>
+												</div>
+												<div class="col" id="join-info-department-back">
+													<input type="text" class="join-inputBox-1" />
+													<p class="join-example">예) 기획팀, 마케팅팀, 전략기획실, 임원</p>
+												</div>
 											</div>
-											<div class="col" id="join-info-mail-back">
-												<input type="text" class="join-inputBox-2" />
-												<span>@</span>
-												<input type="text" class="join-inputBox-2" />
-												<select style="height: 20px;font-size: 12px; border-color:rgb(175 175 175)">
-													<option value="" selected>직접입력</option>
-													<option value="">naver.com</option>
-													<option value="">daum.net</option>
-													<option value="">gamil.com</option>
-												</select>
+											<div class="row" id="join-info-position-wrap">
+												<div class="col-2" id="join-info-position-front">
+													<span>직급</span>
+												</div>
+												<div class="col" id="join-info-position-back">
+													<input type="text" class="join-inputBox-1" />
+													<p class="join-example">예) 사원, 대리, 부장, 대표</p>
+												</div>
 											</div>
-										</div>
-										<div class="row" id="join-info-phoneNumber-wrap">
-											<div class="col-2" id="join-info-phoneNumber-front">
-												<span>휴대폰</span>
+											<div class="row" id="join-info-memo-wrap">
+												<div class="col-2" id="join-info-memo-front">
+													<span>메모</span>
+												</div>
+												<div class="col" id="join-info-memo-back">
+													<input type="text" class="join-inputBox-4" />
+												</div>
 											</div>
-											<div class="col" id="join-info-phoneNumber-back">
-												<select style="height: 20px;font-size: 12px; border-color:rgb(175 175 175)"">
-													<option value="" selected>선택</option>
-													<option value="">010</option>
-													<option value="">011</option>
-													<option value="">016</option>
-													<option value="">017</option>
-													<option value="">019</option>
-												</select>
-												<span>-</span>
-												<input type="text" class="join-inputBox-3" />
-												<span>-</span>
-												<input type="text" class="join-inputBox-3" />
-											</div>
-										</div>
-										<div class="row" id="join-info-department-wrap">
-											<div class="col-2" id="join-info-department-front">
-												<span>소속(부서/팀)</span>
-											</div>
-											<div class="col" id="join-info-department-back">
-												<input type="text" class="join-inputBox-1" />
-												<p class="join-example">예) 기획팀, 마케팅팀, 전략기획실, 임원</p>
-											</div>
-										</div>
-										<div class="row" id="join-info-position-wrap">
-											<div class="col-2" id="join-info-position-front">
-												<span>직급</span>
-											</div>
-											<div class="col" id="join-info-position-back">
-												<input type="text" class="join-inputBox-1" />
-												<p class="join-example">예) 사원, 대리, 부장, 대표</p>
-											</div>
-										</div>
-										<div class="row" id="join-info-memo-wrap">
-											<div class="col-2" id="join-info-memo-front">
-												<span>메모</span>
-											</div>
-											<div class="col" id="join-info-memo-back">
-												<input type="text" class="join-inputBox-4" />
-											</div>
+											
 										</div>
 										
-									</div>
-									
-									<div class="join-name">
-										&#x02666; 사용자 권한 설정
-									</div>
-									
-									<div id="join-bottom">
-										<div class="row" id="join-permissions-login-wrap">
-											<div class="col-2" id="join-permissions-login-front">
-												<span>로그인 허용</span>
-											</div>
-											<div class="col" id="join-permissions-login-back">									
-												<input type="checkbox" checked="checked"/>
-												<span>허용함</span>
-											</div>
+										<div class="join-name">
+											&#x02666; 사용자 권한 설정
 										</div>
-										<div class="row" id="join-permissions-set-wrap">
-											<div class="col-2" id="join-permissions-set-front">
-												<span>권한설정</span>
-											</div>
-											<div class="col" id="join-permissions-set-back">	
-												<div>
-													<input type="checkbox" checked="checked" />
-													<span>사이트운영</span>
+										
+										<div id="join-bottom">
+											<div class="row" id="join-permissions-login-wrap">
+												<div class="col-2" id="join-permissions-login-front">
+													<span>로그인 허용</span>
 												</div>
-												<div>
-													<input type="checkbox" checked="checked" />
-													<span>SMS/메일</span>
-												</div>	
-												<div>
-													<input type="checkbox" checked="checked" />
-													<span>디자인관리</span>
-												</div>
-												<div>
+												<div class="col" id="join-permissions-login-back">									
 													<input type="checkbox" checked="checked"/>
-													<span>모바일 디자인관리</span>
+													<span>허용함</span>
 												</div>
-												<div>
-													<input type="checkbox" checked="checked" />
-													<span>환경설정</span>
-												</div>				
 											</div>
+											<div class="row" id="join-permissions-set-wrap">
+												<div class="col-2" id="join-permissions-set-front">
+													<span>권한설정</span>
+												</div>
+												<div class="col" id="join-permissions-set-back">	
+													<div>
+														<input type="checkbox" checked="checked" />
+														<span>사이트운영</span>
+													</div>
+													<div>
+														<input type="checkbox" checked="checked" />
+														<span>SMS/메일</span>
+													</div>	
+													<div>
+														<input type="checkbox" checked="checked" />
+														<span>디자인관리</span>
+													</div>
+													<div>
+														<input type="checkbox" checked="checked"/>
+														<span>모바일 디자인관리</span>
+													</div>
+													<div>
+														<input type="checkbox" checked="checked" />
+														<span>환경설정</span>
+													</div>				
+												</div>
+											</div>
+											<div class="row" id="join-permissions-setPage-wrap">
+												<div class="col-2" id="join-permissions-setPage-front">
+													<span>첫 페이지 설정</span>
+												</div>
+												<div class="col" id="join-permissions-setPage-back">
+													<select style="height: 20px;font-size: 12px;margin-top: 5px; border-color:rgb(175 175 175)">
+														<option value="" selected>사이트운영</option>
+														<option value="">메뉴@~@</option>
+														<option value="">메뉴~@~</option>
+													</select>
+													<p class="join-example">로그인 시 로딩되는 첫 페이지를 설정합니다.</p>
+												</div>
+											</div>
+	
 										</div>
-										<div class="row" id="join-permissions-setPage-wrap">
-											<div class="col-2" id="join-permissions-setPage-front">
-												<span>첫 페이지 설정</span>
-											</div>
-											<div class="col" id="join-permissions-setPage-back">
-												<select style="height: 20px;font-size: 12px;margin-top: 5px; border-color:rgb(175 175 175)">
-													<option value="" selected>사이트운영</option>
-													<option value="">메뉴@~@</option>
-													<option value="">메뉴~@~</option>
-												</select>
-												<p class="join-example">로그인 시 로딩되는 첫 페이지를 설정합니다.</p>
-											</div>
-										</div>
-
+	
 									</div>
-
-								</div>
-								
-								
-								
-								
-								<div class="modal-footer"  style="margin:0 auto;border:none;">
-					<!-- 				<button type="button" class="btn btn-secondary"data-bs-dismiss="modal">취소</button>
-									<button type="button" class="btn btn-primary">확인</button> -->
-									<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
-									<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+				
+									
+									
+									
+									<div class="modal-footer"  style="margin:0 auto;border:none;">
+						<!-- 				<button type="button" class="btn btn-secondary"data-bs-dismiss="modal">취소</button>
+										<button type="button" class="btn btn-primary">확인</button> -->
+										<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
+										<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+									</div>
 								</div>
 							</div>
 						</div>
+						<button class="main-bottom-button-2">일괄등록</button>
 					</div>
-					<button class="main-bottom-button-2">일괄등록</button>
 				</div>
-
-				<!-- 페이지이동 억지로 맞춘 상태, 수정 필요-->
-	
-				<nav style="padding: 50px 45%;">
+				<!-- 여기 가운데 정렬 하고싶은데 방법을 몰라서 패딩으로 강제로 잡았습니다. -->
+				<nav style="padding: 10px 45%;margin:0 auto;">
 					<ul class="pagination">
 						<li class="page-item">
 							<a class="page-link" href="#" aria-label="Previous"style="padding:0 15px 0 5px;">
@@ -1255,7 +1257,7 @@
 						</li>
 					</ul>
 				</nav>
-
+				
 			</div>
 
 		</div>
