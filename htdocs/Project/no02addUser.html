@@ -122,7 +122,7 @@
     		padding:15px 5px 15px 30px;
     		background-color: white;
     		width:97%;
-    		height: 130px;
+    		height: 110px;
     		margin:0 auto;
     		border:3px solid rgb(244 244 244);
     	}
@@ -133,11 +133,14 @@
     	#main-searchBox-back {
     		display: inline-block;
     		float: right;
-			margin:18px 20px 20px 0;
+			margin:0;
+			padding:7px 10px;
     		
     	}
     	.main-searchBox-line {
-    		padding:5px 0;
+    		display: flex;
+    		padding:25px 0;
+    		vertical-align: middle;
     	}
     	.main-searchBox-front-name {
     		 display: inline-block;
@@ -374,6 +377,17 @@
 			height: 30px;
 			border:2px solid rgb(220 221 226);
 			border-bottom: none;
+			
+			background-color: rgb(240 241 245);
+		}
+		.join-info-password-front2 {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
 			border-left: none;
 			background-color: rgb(240 241 245);
 		}
@@ -552,7 +566,7 @@
 			height: 50px;			
 			border:2px solid rgb(220 221 226);
 			border-left: none;
-
+	
 		}
 		
 		
@@ -561,8 +575,8 @@
 	
 	
 	</head>
+		<!-- -------------------------------------     메인페이지: 사용자 추가         ------------------------------------------------------------------------- -->
 	<body style="margin:0;">
-	<!-- source start --> 
 
  		<header style="height: 43px;" > 
 			<div style="width:13%;margin:0;float: left;">
@@ -594,7 +608,6 @@
 		</header>
 	<!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->	
 		
-
 	<div style="width:100%">
 	
 		<nav class="nav-full">
@@ -610,21 +623,23 @@
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingOne">
 						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-							회원관리
+							서비스관리
 						</button>
 					</h2>
 					<div id="flush-collapseOne" class="accordion-collapse collapse"aria-labelledby="flush-headingOne"data-bs-parent="#accordionFlushExample">
 						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
-							<button type="button" class="nav-button-sub">회원 리스트</button>
-							<button type="button" class="nav-button-sub">가입대기 회원</button>
-							<button type="button" class="nav-button-sub">탈퇴회원 리스트</button>
+							<button type="button" class="nav-button-sub">계정관리</button>
+							<button type="button" class="nav-button-sub">사용자관리</button>
+							<button type="button" class="nav-button-sub">포인트관리(유지보수)</button>
+							<button type="button" class="nav-button-sub">연동서비스관리</button>
+							<button type="button" class="nav-button-sub">결제내역조회</button>
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingTwo">
 						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-							콘텐츠 관리
+							사이트관리
 						</button>
 					</h2>
 					<div id="flush-collapseTwo" class="accordion-collapse collapse"aria-labelledby="flush-headingTwo"data-bs-parent="#accordionFlushExample">
@@ -635,87 +650,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="flush-headingThree">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-							제품관리
-						</button>
-					</h2>
-					<div id="flush-collapseThree" class="accordion-collapse collapse"aria-labelledby="flush-headingThree"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
-							<button type="button" class="nav-button-sub">1</button>
-							<button type="button" class="nav-button-sub">2</button>
-							<button type="button" class="nav-button-sub">3</button>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="flush-headingFour">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-							주문관리
-						</button>
-					</h2>
-					<div id="flush-collapseFour" class="accordion-collapse collapse"aria-labelledby="flush-headingFour"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
-							<button type="button" class="nav-button-sub">1</button>
-							<button type="button" class="nav-button-sub">2</button>
-							<button type="button" class="nav-button-sub">3</button>
-						</div>
-					</div>
-				</div>			
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="flush-headingFive">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-							신청폼관리
-						</button>
-					</h2>
-					<div id="flush-collapseFive" class="accordion-collapse collapse"aria-labelledby="flush-headingFive"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
-							<button type="button" class="nav-button-sub">1</button>
-							<button type="button" class="nav-button-sub">2</button>
-							<button type="button" class="nav-button-sub">3</button>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="flush-headingSix">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-							예약관리
-						</button>
-					</h2>
-					<div id="flush-collapseSix" class="accordion-collapse collapse"aria-labelledby="flush-headingSix"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
-							<button type="button" class="nav-button-sub">1</button>
-							<button type="button" class="nav-button-sub">2</button>
-							<button type="button" class="nav-button-sub">3</button>
-						</div>
-					</div>
-				</div>	
-				<h2 class="nav-button-nomal-h2">
-					<button class="nav-button-nomal nav-button-main" type="button">
-						일정관리
-					</button>
-				</h2>			
-				<h2 class="nav-button-nomal-h2">
-					<button class="nav-button-nomal nav-button-main" type="button">
-						팝업관리
-					</button>
-				</h2>
-				
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="flush-headingSeven">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-							부가기능관리
-						</button>
-					</h2>
-					<div id="flush-collapseSeven" class="accordion-collapse collapse"aria-labelledby="flush-headingSeven"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
-							<button type="button" class="nav-button-sub">1</button>
-							<button type="button" class="nav-button-sub">2</button>
-							<button type="button" class="nav-button-sub">3</button>
-						</div>
-					</div>
-				</div>				
+							
 			</div>
 			<div id="nav-serviceCenter">
 				<h6 id="nav-serviceCenter-title">고객센터</h6>
@@ -737,14 +672,13 @@
 	
 		</nav>
 		<div id="main-full">
-			<div style="padding:10px 10px;">
-						<div>
+			<!-- 선택페이지 제목 -->
+			<div>
 							<div>
-								<div class="modal-header">
+								<div class="modal-header" style="padding:30px 25px 5px 25px;border:none">
 									<h5 class="modal-title" id="staticBackdropLabel">§ 사용자 추가</h5>
-									
 								</div>
-								<div class="modal-body">
+								<div class="modal-body" style="padding:0 25px 16px 25px;">
 									<div class="join-name">
 										&#x02666; 사용자 정보 입력
 									</div>
@@ -777,7 +711,7 @@
 												<input type="text" class="join-inputBox-1" />
 												<span class="join-example">* 알파벳 소문자, 숫자 포함 8자 이상 30자 이하</span>
 											</div>
-											<div class="col-2 join-info-password-front">
+											<div class="col-2 join-info-password-front2">
 												<span>비밀번호 확인</span>
 												<span style="color: red">*</span>
 											</div>
@@ -903,14 +837,9 @@
 												<p class="join-example">로그인 시 로딩되는 첫 페이지를 설정합니다.</p>
 											</div>
 										</div>
-
 									</div>
-
 								</div>
-								
-								
-								
-								
+
 								<div class="row modal-footer"  style="margin:0 auto;border:none; padding:0;">
 					<!-- 				<button type="button" class="btn btn-secondary"data-bs-dismiss="modal">취소</button>
 									<button type="button" class="btn btn-primary">확인</button> -->
@@ -925,7 +854,11 @@
 								</div>
 							</div>
 						</div>
-			</div>
+				
+				
+				
+			
+
 		</div>
 	</div>
 
