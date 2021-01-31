@@ -1315,10 +1315,10 @@
 						</tbody>
 					</table>
 				</div>
-				<!-- 테이블 밑 버튼 -->
-				<!-- --------------------------------------------------------하단 버튼 --------------------------------------------------------------------------------- -->
-				<nav style="padding: 20px 43% 0 43%;margin:0 auto;">
-				<!-- 여기 가운데 정렬 하고싶은데 방법을 몰라서 패딩으로 강제로 잡았습니다. -->
+				
+				<!-- --------------------------------------------------------하단 페이징, 버튼 --------------------------------------------------------------------------------- -->
+				<!-- 페이징 -->
+				<nav style="padding: 20px 0 0;justify-content: center;display: flex; ">
 					<ul class="pagination">
 						<li class="page-item">
 							<a class="page-link" href="#" aria-label="Previous"style="padding:0 15px 0 5px;">
@@ -1345,32 +1345,27 @@
 					</ul>
 				</nav>
 				
-				
-				<div class="row" style="margin:0px 0 10px 0;">
-				
-					<div class="col" style="text-align: left;">
-						<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">좌측버튼1</button>
-						<button class="main-bottom-button-2">좌측버튼2</button>
-					</div>
-						
-					<div class="col" style="text-align: right;">
-						<!-- Button trigger modal -->
-						<button class="main-bottom-button-2">일괄등록</button>
-						<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">회원등록</button>
-		
-
+				<!-- 하단 버튼 -->
+				<div class="container-fluid" style="padding:0;">
+					<div class="row" style="margin:0px 0 10px 0;">
+						<div class="col" style="text-align: left;">
+							<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">좌측버튼1</button>
+							<button class="main-bottom-button-2">좌측버튼2</button>
+						</div>
+							
+						<div class="col" style="text-align: right;">
+							<!-- Button trigger modal -->
+							<button class="main-bottom-button-2">일괄등록</button>
+							<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">회원등록</button>
+						</div>
 					</div>
 				</div>
-				
-				
-				
-		
+				<!-- 하단버튼 끝 -->
 			</div>
-
 		</div>
 	</div>
-			<!-- --Modal---- -->
-			<!-- --사용자 추가 Modal-- -->
+			<!-- --Modal-- -->
+			<!-- --사용자 추가 Modal 시작-- -->
 			<div class="modal fade " id="staticBackdrop"
 				data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="staticBackdropLabel" aria-hidden="true">
 				<div class="modal-dialog modal-xl">
@@ -1556,6 +1551,7 @@
 								<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
 							</div>
 						</div>
+			<!-- 사용자 추가 Modal 하단 버튼 끝-->
 					</div>
 				</div>
 			</div>					
@@ -1744,15 +1740,7 @@
 					</div>
 				</div>
 			</div>
-		
-		
-		
-		
-		
-		
-		
 		<!-- --회원 정보 Modal 끝-- -->	
-				
 		<!-- --Modal 끝-- -->			
 
 	<!-- source end -->
