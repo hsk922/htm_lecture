@@ -1113,6 +1113,7 @@
 			</div>
 			<!-- 검색결과 부분 -->
 			<div id="main-searchResult">
+			
 				<div  id="main-searchResult-top" style="width:100%">
 					<div   id="main-searchResult-top-front" style="display: inline-block; ">
 						<span>검색결과 : </span>
@@ -1155,7 +1156,7 @@
 								<td class="table-1"><input type="checkbox" /></td>
 								<td class="table-2">13</td>
 								<td class="table-3">test13</td>
-								<td class="table-4" id=admin13>admin13</td>
+								<td class="table-4">admin13</td>
 								<td class="table-5">일반회원</td>
 								<td class="table-6">정상</td>
 								<td class="table-7">0<button type="button" disabled class="table-button1">off</button></td>
@@ -1315,8 +1316,9 @@
 					</table>
 				</div>
 				
-				<!-- --------------------------------------------------------하단 페이징, 버튼 --------------------------------------------------------------------------------- -->
+				<!-- --------------------------------------------------------페이징, 버튼 --------------------------------------------------------------------------------- -->
 				<!-- 페이징 -->
+				<!-- 여기 가운데 정렬 하고싶은데 방법을 몰라서 패딩으로 강제로 잡았습니다. -->
 				<nav style="padding: 20px 0 0;justify-content: center;display: flex; ">
 					<ul class="pagination">
 						<li class="page-item">
@@ -1556,7 +1558,8 @@
 			</div>					
 			<!-- --사용자 추가 Modal 끝-- -->		
 			<!-- --회원 정보 Modal 시작-- -->	
-			<div class="modal fade " id="user-data-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="test13-dataLabel" aria-hidden="true">
+			<div class="modal fade " id="user-data-modal"
+				data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="test13-dataLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 						<div class="modal-header" style="background-color: rgb(49 50 54); color: white;border-bottom:none;padding:8px 15px; ">
@@ -1575,8 +1578,8 @@
 									<div class="col-2 memberInfo-id-front">
 										<span>아이디</span>
 									</div>
-									<div class="col memberInfo-id-back"  >
-										<span>admin13</span><!-- (값 불러오기 필요) -->
+									<div class="col memberInfo-id-back">
+										<span>test13</span><!-- (값 불러오기 필요) -->
 										<a href="#" style="font-size: 11px;" >비번변경</a>
 									</div>
 								</div>

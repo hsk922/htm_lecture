@@ -1,51 +1,157 @@
-<!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-	<!-- source start -->  
- 		<header style="height: 43px;" > 
- 			<div class="container-fluid">
- 				<div class="row">
-					<div class="col2" style="margin:0;float: left;">
-						<div class="top-container-text3">WHOIS ADMIN</div>
+<div class="modal-header"
+	style="background-color: rgb(49, 50, 54); color: white; border-bottom: none; padding: 8px 15px;">
+	<h6 class="modal-title" id="test13-dataLabel">사용자별 (연결필요) 님의
+		회원정보입니다.</h6>
+	<button type="button" class="btn-close" data-bs-dismiss="modal"
+		aria-label="Close"></button>
+</div>
+<div class="modal-body">
+	<div>버튼 4개 자리</div>
+	<div class="memberInfo-header">&#x02666; 회원 기본 정보</div>
+	<div class="container">
+		<div class="row memberInfo-id-wrap">
+			<div class="col-2 memberInfo-id-front">
+				<span>아이디</span>
+			</div>
+			<div class="col memberInfo-id-back">
+				<span>admin13</span>
+				<!-- (값 불러오기 필요) -->
+				<a href="#" style="font-size: 11px;">비번변경</a>
+			</div>
+		</div>
+		<div class="row memberInfo-name-wrap">
+			<div class="col-2 memberInfo-name-front">
+				<span>이름</span>
+			</div>
+			<div class="col memberInfo-name-back">
+				<span>admin13</span>
+				<!-- (값 불러오기 필요) -->
+			</div>
+		</div>
+		<div class="row memberInfo-email-wrap">
+			<div class="col-2 memberInfo-email-front">
+				<span>이메일</span>
+			</div>
+			<div class="col memberInfo-email-back">
+				<span>admin13@naver.com</span>
+				<!--  (값 불러오기 필요), (미인증버튼)(수신거부버튼) -->
+				<a href="#" style="font-size: 11px;">메일전송</a>
+			</div>
+		</div>
+		<div class="row memberInfo-membershipLevel-wrap">
+			<div class="col-2 memberInfo-membershipLevel-front">
+				<span>회원등급</span>
+			</div>
+			<div class="col memberInfo-membershipLevel-back">
+				<span>일반회원</span>
+				<!-- (값 불러오기 필요) -->
+				<a href="#" style="font-size: 11px;">등급변경</a>
+			</div>
+		</div>
+		<div class="row memberInfo-accessDate-wrap">
+			<div class="col-2 memberInfo-accessDate-front">
+				<span>가입/접속</span>
+			</div>
+			<div class="col memberInfo-accessDate-back">
+				<span>2019.04.18 10:13</span>
+				<!-- (값 불러오기 필요) -->
+			</div>
+		</div>
+		<div class="row memberInfo-login-wrap">
+			<div class="col-2 memberInfo-login-front">
+				<span>로그인</span>
+			</div>
+			<div class="col memberInfo-login-back">
+				<span>총 로그인 </span> <span>0</span>
+				<!-- (값 불러오기 필요) -->
+				<span>회 (마지막 로그인 : </span> <span>로그인 기록 없음)</span>
+				<!-- 로그인 동에 따라 출력 변경 필요 -->
+			</div>
+		</div>
+	</div>
+	<button type="button" class="main-bottom-button-1" data-bs-toggle=""
+		style="margin: 10px 45% 0;">정보수정</button>
+	<div class="memberInfo-header">&#x02666; 사이트 가입 정보</div>
+	<div class="container">
+		<div class="joinInformation-address">
+			<div class="row joinInformation-address-wrap">
+				<div class="col-2 joinInformation-address-front">
+					<span>주소</span>
+				</div>
+				<div class="col joinInformation-address-back">
+					<span>중앙정보처리학원</span>
+				</div>
+			</div>
+			<div class="row joinInformation-phoneNumber-wrap">
+				<div class="col-2 joinInformation-phoneNumber-front">
+					<span>휴대전화</span>
+				</div>
+				<div class="col joinInformation-phoneNumber-back">
+					<div>
+						<span style="font-size: 12px">010-1234-5678</span> <span>수신거부버튼</span>
+						<a href="#" style="font-size: 11px;">SMS전송</a>
 					</div>
-					
-					<div class="col container-fluid" style="display: inline-block;margin:0;"><!-- 할것. whois부분 분리여부, 분리가능한지,분리되면 위치 재조정,   마우스오버시 컬러변화, 링크 연결 -->
-						<div class="row row-cols-12 row-cols-sm-12 row-cols-md-12 row-cols-lg-12"
-							style="text-align: center; height: 35px">
-							<div class="col top-container-text">사이트 운영</div>
-							<div class="col top-container-text">SMS/메일</div>
-							<div class="col top-container-text">디자인 관리</div>
-							<div class="col-1 top-container-text">모바일 디자인 관리</div>
-							<div class="col top-container-text">통계</div>
-							<div class="col top-container-text">환경설정</div>
-							<div class="col-5 top-container-text" style="text-align: left; padding-left: 30px">후이즈드림메일</div>
-							<div class="col-1 top-container-text2">
-								<div style="border: 1px solid rgb(22, 31, 40); float: left;; padding: 3px 0; width: 33.333%; height: 100%">
-									<img src="icon-monitor2.png" alt=""
-										style="width: auto; height: 30px; -webkit-filter: opacity(.5) drop-shadow(0 0 0 white); filter: opacity(.5) drop-shadow(0 0 0 white);">
-								</div>
-								<div
-									style="border: 1px solid rgb(22, 31, 40); display: inline-block; width: 33.333%; height: 100%; padding: 5px 0">
-									<img src="icon-phone2.png" alt=""
-										style="width: auto; height: 25px; -webkit-filter: opacity(.5) drop-shadow(0 0 0 white); filter: opacity(0.5) drop-shadow(0 0 0 white);" />
-								</div>
-								<div style="border: 1px solid rgb(22, 31, 40); float: right;; width: 33.333%; height: 100%; padding: 5px 0">
-									<img src="icon-logout2.png" alt=""
-										style="width: auto; height: 20px; -webkit-filter: opacity(.5) drop-shadow(0 0 0 white); filter: opacity(.5) drop-shadow(0 0 0 white);" />
-								</div>
-							</div>
-						</div>
-					</div>
- 				</div>
- 			</div>
-		</header>
-	<!-- source end -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  </body>
-</html>
+				</div>
+			</div>
+			<div class="row joinInformation-nickName-wrap">
+				<div class="col-2 joinInformation-nickName-front">
+					<span>닉네임</span>
+				</div>
+				<div class="col joinInformation-nickName-back">
+					<span></span>
+				</div>
+			</div>
+			<div class="row joinInformation-birthday-wrap">
+				<div class="col-2 joinInformation-birthday-front">
+					<span>생년월일(필수)</span>
+				</div>
+				<div class="col joinInformation-birthday-back">
+					<span>1940.09.22</span>
+				</div>
+			</div>
+			<div class="row joinInformation-custom-wrap">
+				<div class="col-2 joinInformation-custom-front">
+					<span>사용자정의</span>
+				</div>
+				<div class="col joinInformation-custom-back">
+					<span></span>
+				</div>
+			</div>
+			<div class="row joinInformation-sex-wrap">
+				<div class="col-2 joinInformation-sex-front">
+					<span>성별</span>
+				</div>
+				<div class="col joinInformation-sex-back">
+					<span>남</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="memberInfo-header">&#x02666; 관리자 운영메모</div>
+
+	<div class="container" style="margin-bottom: 10px;">
+		<div class="row">
+			<div class="col-11" style="display: inline-block; padding: 0;">
+				<input type="text"
+					style="height: 25px; padding: 10px 0; width: 100%; height: 30px; border: 1px solid rgb(220, 221, 226)" />
+			</div>
+			<div class="col"
+				style="display: inline-block; padding: 0; text-align: center;">
+				<button type="submit" class="col main-bottom-button-1"
+					data-bs-toggle="" style="width: 55px; height: 100%; float: right;">등록</button>
+			</div>
+		</div>
+	</div>
+	<div class="container"
+		style="border: 2px solid rgb(220, 221, 226); padding: 0;">
+		<div class="row"
+			style="font-size: 12px; font-weight: 600; text-align: center;">
+			<div class="col" style="padding: 0;">번호</div>
+			<div class="col" style="padding: 0;">작성일</div>
+			<div class="col-6" style="padding: 0;">내용</div>
+			<div class="col" style="padding: 0;">작성자</div>
+			<div class="col" style="padding: 0;">관리</div>
+		</div>
+	</div>
+</div>

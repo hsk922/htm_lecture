@@ -1,0 +1,1256 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>후이즈 홈페이지 운영 가이드</title>
+    <style type="text/css">
+    	.top-container-text {
+    		 background-color: rgb(35 47 63);
+    		 border:1px solid rgb(22 31 40);
+    		 height: 44px;
+    		 color: white;
+    		 font-size: 13px;
+    		 padding:8px 0;
+    	}
+    	.top-container-text2 {
+    		 background-color: rgb(35 47 63);
+    		 
+    		 height: 44px;
+    		 color: white;
+    		 font-size: 13px;
+    		 padding:0px 0;
+    		 position: static;
+    		 vertical-align: middle;
+    	}
+    	.top-container-text3 {
+    		 background-color: rgb(35 47 63);
+    		 border:1px solid rgb(22 31 40);
+    		 border-bottom:none;
+    		 height: 43px;
+    		 color: white;
+    		 font-size: 15px;
+    		 padding:8px 25px;
+    	}
+    	/* -------------------------------------------------- */    	
+    	
+    	
+    	.nav-full {
+    		width:13%;
+    		height:1024px;
+    		background-color: rgb(55 71 96);
+    		float: left;
+    		
+    	}
+    	#nav-status-wrap {
+    		text-align: left;
+    		padding: 15px 0 15px 15px;
+    		border: 1px solid rgba(0, 0, 0, 0.125);
+    		border-top: none;
+    	}
+    	.nav-status {
+    		font-size: 12px;
+    		color: rgb(136 142 154);
+    		display: block;
+    	}
+    	.nav-status-var {
+    		font-size: 12px;
+    		color: yellow;
+    		display: block;
+    	}
+    	.nav-button-main {
+    		color: rgb(190, 195, 198);
+    		height: 37px;
+    		font-size: 13px;
+    		font-weight: 600;
+    		/* color: white; */
+    	}
+    	.nav-button-sub {
+    		background-color: rgb(32, 44, 60);
+    		color: rgb(136 142 154);
+    		font-size: 12px;
+    		display: block;
+    		width: 100%;
+    		height: 35px;
+    		border: none;
+    		padding:10px 0 10px 35px;
+    		text-align: left;
+    	}
+    	.nav-button-nomal {
+    		position: relative;
+    		display: flex;
+    		align-items: center;
+    		width: 100%;
+    		border: 1px solid rgba(0, 0, 0, 0.125);
+    		overflow-anchor: none;
+    		padding: 1rem 1.25rem;
+    		background-color: rgb(55, 71, 96);
+    		
+   		
+    	}
+    	.nav-button-nomal-h2 {
+    		display: block;
+    		margin:0;
+    	}
+    	#nav-serviceCenter {
+    		background-color: rgb(84, 100, 125);
+    		border: 1px solid rgba(0, 0, 0, 0.125);
+    		padding: 15px 0 5px 0;
+    	}
+    	#nav-serviceCenter-title {
+    		padding: 0 17px;
+    		font-size: 14px;
+    		color: rgb(50, 174, 198);
+    		font-weight: 600;
+    	}
+    	.nav-serviceCenter-li {
+    		font-size: 12px;
+    		color: rgb(190, 195, 198);
+			
+    	}
+    	
+    	/* -------------------------------------------------- */
+  
+    	#main-full {
+    		width:87%;
+    		height:1024px;
+    		display: inline-block;
+    		background-color: rgb(248 248 248);
+    	}
+    	#main-searchBox {
+    		padding:15px 5px 15px 30px;
+    		background-color: white;
+    		width:97%;
+    		height: 110px;
+    		margin:0 auto;
+    		border:3px solid rgb(244 244 244);
+    	}
+    	#main-searchBox-front {
+    		display: inline-block;
+    		font-size: 13px;
+    	}
+    	#main-searchBox-back {
+    		display: inline-block;
+    		float: right;
+			margin:0;
+			padding:7px 10px;
+    		
+    	}
+    	.main-searchBox-line {
+    		display: flex;
+    		padding:25px 0;
+    		vertical-align: middle;
+    	}
+    	.main-searchBox-front-name {
+    		 display: inline-block;
+    		 padding:0 40px 0 5px;
+    		 font-weight: 600;
+    	}
+    	.main-searchBox-front-name2 {
+    		 display: inline-block;
+    		 padding:0 60px 0 5px;
+    		 font-weight: 600;
+    	}
+    	
+    	
+    	.main-checkbox {
+    		display: inline-block;
+    		padding: 0 5px;
+    	}
+     	/* -------------------------------------------------- */   	
+    	
+    	#main-searchResult {
+    		width:97%;
+    		height: 100%;
+    		margin:0 auto;
+    	}
+    	
+    	#main-searchResult-top {
+    		font-size: 12px;
+    		padding: 80px 5px 20px 5px;
+    		display: inline-block;
+    	}
+    	.table-button-guoup {
+    		
+    		float: right;
+    		font-size: 10px;
+    		margin:0;
+    		height: 15px;
+    		
+    		background-color: white;
+    		
+    	}
+    	.table-button {
+    		display: inline-block;
+    		margin:0;
+    		padding:0 5px;
+    		background-color: white;
+    		color: black;
+    		border-color: rgb(232 232 232);
+    		border-radius: 3px;
+    	}
+    	
+    	
+    	
+    	#main-searchResult-table-full {
+    		background-color: white;
+    		padding:15px 15px 25px 15px;
+    	}
+    	#main-table {
+    		font-size: 13px;
+    		text-align: center;
+    		
+    	}
+    	
+    	
+    	.table-1 {
+    		padding:5px 10px 5px 20px;
+    	}
+    	.table-2 {
+    		padding:5px 45px 5px 25px;
+    	}
+    	.table-3 {
+    		padding:5px 45px 5px 45px;
+    	}
+    	.table-4 {
+    		padding:5px 60px 5px 60px;
+    	}
+    	.table-5 {
+    		padding:5px 45px 5px 45px;
+    		color: rgb(63 72 204);
+    	}
+    	.table-6 {
+    		padding:5px 50px 5px 50px;
+    	}
+    	.table-7 {
+    		padding:5px 45px 5px 45px;
+    	}
+    	.table-8 {
+    		padding:5px 45px 5px 45px;
+    	}
+    	.table-9 {
+    		padding:5px 170px 5px 170px;
+    	}
+    	
+    	
+    	.table-button1 {
+    		border:2px solid rgb(232 232 232);
+    		border-radius: 5px;
+    		height: 20px;
+    		font-size: 5px;
+    		margin-left: 5px;
+    		background-color: white;
+    		
+    		
+    	}
+    	/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+    	#main-bottom-button-wrap {
+    		padding: 10px 0;
+    		text-align: right;
+    		height: 20px;
+    	}
+    	
+    	.main-bottom-button-1 {
+    		font-size: 11px;
+    		color: white;
+    		background-color: rgb(19 195 222);
+    		height: 26px;
+    		border: 2px solid rgb(16 188 214);
+    		border-radius: 4px;
+    	}
+    	
+    	.main-bottom-button-2 {
+     		font-size: 11px;
+    		color: white;
+    		background-color: rgb(66 108 220);
+    		height: 26px;
+    		border: 2px solid rgb(54 95 209);
+    		border-radius: 4px;
+    	}
+    	
+    	
+	</style>
+	<style type="text/css">
+		.join-name {
+			font-size: 11px;
+			font-weight: 600;
+			text-align: left;
+		}
+		.join-example {
+			font-size: 9px;
+			color: rgb(78 131 225);
+		}	
+		
+		#join-top {
+			margin:10px;
+		}
+		
+		.join-inputBox-1 {
+			height: 20px;
+			margin:5px 0;
+			font-size: 12px;
+			border:1px solid  rgb(175 175 175);
+			
+		}
+		.join-inputBox-2 {
+			width: 90px;
+			height: 20px;
+			margin:5px 0;
+			font-size: 12px;
+			border:1px solid  rgb(175 175 175);			
+		}
+		.join-inputBox-3 {
+			width: 40px;
+			height: 20px;
+			margin:5px 0;
+			font-size: 12px;
+			border:1px solid  rgb(175 175 175);
+		}
+		.join-inputBox-4 {
+			width: 100%;
+			height: 30px;
+			margin:5px 0;
+			font-size: 12px;
+			border:1px solid  rgb(175 175 175);
+		}
+		
+		
+		
+		
+		#join-info-id-wrap {
+			text-align: left;
+			
+		}
+		#join-info-id-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+			
+			/* border:2px solid rgb(220 221 226); */
+		}
+		#join-info-id-back {
+			display: inline-block;
+			height: 30px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		
+		#join-info-name-wrap {
+			text-align: left;
+			
+		}
+		#join-info-name-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+		}
+		#join-info-name-back {
+			display: inline-block;
+			height: 30px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		#join-info-passowrd-wrap {
+			text-align: left;
+			
+		}
+		.join-info-password-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			
+			background-color: rgb(240 241 245);
+		}
+		.join-info-password-front2 {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			border-left: none;
+			background-color: rgb(240 241 245);
+		}
+		.join-info-password-back {
+			display: inline-block;
+			height: 30px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		#join-info-mail-wrap {
+			text-align: left;
+		}
+		
+		#join-info-mail-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+		}
+		#join-info-mail-back {
+			display: inline-block;
+			height: 30px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		#join-info-phoneNumber-wrap {
+			text-align: left;
+		}
+		#join-info-phoneNumber-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+		}
+		#join-info-phoneNumber-back {
+			display: inline-block;
+			height: 30px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		#join-info-department-wrap {
+			text-align: left;
+		}
+		#join-info-department-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:12px 10px;
+			height: 48px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+		}
+		#join-info-department-back {
+			display: inline-block;
+			height: 48px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		#join-info-position-wrap {
+			text-align: left;
+		}
+		#join-info-position-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:12px 10px;
+			height: 48px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+		}
+		#join-info-position-back {
+			display: inline;
+			height: 48px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		#join-info-memo-wrap {
+			text-align: left;
+		}
+		#join-info-memo-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:10px 10px;
+			height: 44px;
+			border:2px solid rgb(220 221 226);
+			background-color: rgb(240 241 245);
+		}
+		#join-info-memo-back {
+			display: inline-block;
+			height: 44px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+		}
+		
+		#join-bottom {
+			margin:10px;
+		}
+		#join-permissions-login-wrap {
+			text-align: left;
+		}
+		#join-permissions-login-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			background-color: rgb(240 241 245);
+		}
+		#join-permissions-login-back {
+			display: inline-block;
+			height: 30px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			font-size: 13px;
+			padding:3px 10px;
+		}
+		
+		#join-permissions-set-wrap {
+			text-align: left;
+		}
+		#join-permissions-set-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:40px 10px;
+			height: 100px;
+			border-left: 2px solid rgb(220 221 226);
+			border-right: 2px solid rgb(220 221 226);
+			background-color: rgb(240 241 245);
+			
+		}
+		#join-permissions-set-back {
+			display: inline-block;
+			height: 100px;			
+			border-right: 2px solid rgb(220 221 226);
+			padding:3px 10px;
+			font-size: 13px;
+		}
+		
+		#join-permissions-setPage-wrap {
+			text-align: left;
+		}
+		#join-permissions-setPage-front {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 50px;
+			border:2px solid rgb(220 221 226);
+			background-color: rgb(240 241 245);
+		}
+		#join-permissions-setPage-back {
+			display: inline-block;
+			height: 50px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+	
+		}
+		
+		
+	</style>
+	<!-- 사용자 정보 modal style -->
+	<style type="text/css">
+		.memberInfo-header {
+			font-size: 11px;
+			font-weight: 600;
+			text-align: left;
+			padding:5px 0;
+		}
+		.memberInfo-example {
+			font-size: 9px;
+			color: rgb(78 131 225);
+		}	
+		
+		.memberInfo-top {
+			margin:5px 10px 15px;
+		}
+		
+		.memberInfo-id-wrap {
+			text-align: left;
+			
+		}
+		.memberInfo-id-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+			
+			/* border:2px solid rgb(220 221 226); */
+		}
+		.memberInfo-id-back {
+			display: inline-block;
+			font-size: 12px;
+			padding:5px 12px;
+			height: 35px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		
+		.memberInfo-name-wrap {
+			text-align: left;
+			
+		}
+		.memberInfo-name-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+		}
+		.memberInfo-name-back {
+			display: inline-block;
+			font-size: 12px;
+			padding:5px 12px;
+			height: 35px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		
+		.memberInfo-email-wrap {
+			text-align: left;
+			
+		}
+		.memberInfo-email-front {
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			background-color: rgb(240 241 245);
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+		}
+		.memberInfo-email-back {
+			display: inline-block;
+			font-size: 12px;
+			padding:5px 12px;
+			height: 35px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		.memberInfo-membershipLevel-wrap {
+			text-align: left;
+			
+		}
+		.memberInfo-membershipLevel-front {
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			background-color: rgb(240 241 245);
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+		}
+		.memberInfo-membershipLevel-back {
+			display: inline-block;
+			font-size: 12px;
+			padding:5px 12px;
+			height: 35px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}		
+
+		.memberInfo-accessDate-wrap {
+			text-align: left;
+		}
+		.memberInfo-accessDate-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			background-color: rgb(240 241 245);
+		}
+		.memberInfo-accessDate-back {
+			display: inline-block;
+			font-size: 12px;
+			padding:5px 12px;
+			height: 35px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			border-bottom: none;
+		}
+		.memberInfo-login-wrap {
+			text-align: left;
+		}
+		.memberInfo-login-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:3px 10px 7px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			background-color: rgb(240 241 245);
+		}
+		.memberInfo-login-back {
+			display: inline-block;
+			font-size: 12px;
+			padding:5px 12px;
+			height: 35px;			
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+		}
+		
+		.memberInfo-bottom {
+			margin:5px 10px 5px;
+		}
+		.joinInformation-address-wrap {
+			text-align: left;
+		}
+		.joinInformation-address-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			background-color: rgb(240 241 245);
+		}
+		.joinInformation-address-back {
+			display: inline-block;
+			height: 35px;	
+			font-size: 12px;		
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+			padding:5px 10px;
+		}
+		
+		.joinInformation-phoneNumber-wrap {
+			text-align: left;
+		}
+		.joinInformation-phoneNumber-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border-left: 2px solid rgb(220 221 226);
+			border-right: 2px solid rgb(220 221 226);
+			background-color: rgb(240 241 245);
+			
+		}
+		.joinInformation-phoneNumber-back {
+			display: inline-block;
+			height: 35px;
+			font-size: 12px;
+			padding:5px 10px;		
+			border-right: 2px solid rgb(220 221 226);
+		}
+		
+		.joinInformation-nickName-wrap {
+			text-align: left;
+		}
+		.joinInformation-nickName-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			border-bottom:none;
+			background-color: rgb(240 241 245);
+		}
+		.joinInformation-nickName-back {
+			display: inline-block;
+			height: 35px;			
+			font-size: 12px;
+			border:2px solid rgb(220 221 226);
+			border-bottom:none;
+			border-left: none;
+	
+		}
+		.joinInformation-birthday-wrap {
+			text-align: left;
+		}
+		.joinInformation-birthday-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			border-bottom:none;
+			background-color: rgb(240 241 245);
+		}
+		.joinInformation-birthday-back {
+			display: inline-block;
+			height: 35px;
+			font-size: 12px;
+			padding:7px 10px 7px;
+			border:2px solid rgb(220 221 226);
+			border-bottom:none;
+			border-left: none;
+	
+		}.joinInformation-custom-wrap {
+			text-align: left;
+		}
+		.joinInformation-custom-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			border-bottom:none;
+			background-color: rgb(240 241 245);
+		}
+		.joinInformation-custom-back {
+			display: inline-block;
+			height: 35px;
+			font-size: 12px;	
+			padding:7px 10px 7px;
+			border:2px solid rgb(220 221 226);
+			border-bottom:none;
+			border-left: none;
+	
+		}
+		.joinInformation-sex-wrap {
+			text-align: left;
+		}
+		.joinInformation-sex-front {
+			
+			font-size: 12px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 35px;
+			border:2px solid rgb(220 221 226);
+			background-color: rgb(240 241 245);
+		}
+		.joinInformation-sex-back {
+			display: inline-block;
+			height: 35px;
+			font-size: 12px;
+			padding:7px 10px 7px;
+			border:2px solid rgb(220 221 226);
+			border-left: none;
+	
+		}
+	
+	</style>
+	
+	
+	</head>
+		<!-- -------------------------------------     메인페이지: 사용자 추가         ------------------------------------------------------------------------- -->
+	<body style="margin:0;">
+
+ 		<header style="height: 43px;" > 
+			<div style="width:13%;margin:0;float: left;">
+				<div class="top-container-text3">WHOIS ADMIN</div>
+			</div>
+			
+			<div class="container-fluid" style="width:87%;display: inline-block;margin:0;"><!-- 할것. whois부분 분리여부, 분리가능한지,분리되면 위치 재조정,   마우스오버시 컬러변화, 링크 연결 -->
+				<div class="row row-cols-12 row-cols-sm-12 row-cols-md-12 row-cols-lg-12" style="text-align: center;height: 35px">
+					<div class="col top-container-text">사이트 운영</div>
+					<div class="col top-container-text">SMS/메일</div>
+					<div class="col top-container-text">디자인 관리</div>
+					<div class="col-1 top-container-text">모바일 디자인 관리</div>
+					<div class="col top-container-text">통계</div>
+					<div class="col top-container-text">환경설정</div>
+					<div class="col-5 top-container-text" style="text-align: left;padding-left: 30px">후이즈드림메일</div>
+					<div class="col-1 top-container-text2">
+						<div style="border:1px solid rgb(22 31 40);float: left;;padding:3px 0;width:33.333%;height: 100%">
+					    	<img src="icon-monitor2.png" alt="" style="width:auto; height: 30px;-webkit-filter:opacity(.5) drop-shadow(0 0 0 white);filter:opacity(.5) drop-shadow(0 0 0 white);">
+					    </div>
+					    <div style="border:1px solid rgb(22 31 40);display: inline-block;width:33.333%;height:100%;padding:5px 0">
+					    	<img src="icon-phone2.png" alt="" style="width:auto; height: 25px;-webkit-filter:opacity(.5) drop-shadow(0 0 0 white);filter:opacity(0.5) drop-shadow(0 0 0 white);"/>
+					    </div>
+						<div style="border:1px solid rgb(22 31 40);float: right;;width:33.333%;height: 100%;padding:5px 0">
+					    	<img src="icon-logout2.png" alt="" style="width:auto; height: 20px;-webkit-filter:opacity(.5) drop-shadow(0 0 0 white);filter:opacity(.5) drop-shadow(0 0 0 white);"/>
+						</div>		    	
+					</div>
+				</div>
+			</div>
+		</header>
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+		
+	<div style="width:100%">
+	<!-- nav 시작 -->
+		<nav class="nav-full">
+			<div id="nav-status-wrap">
+				<span class="nav-status">서비스 이용 기간</span> <span
+					class="nav-status-var">2017.01.11~2028.01.11</span> <span
+					class="nav-status" style="display: inline-block;">남은기간 : </span> <span
+					class="nav-status-var" style="display: inline-block;">3190</span> <span
+					class="nav-status" style="display: inline-block;">일</span>
+				<button type="submit" style="font-size: 11px;">연장하기</button>
+			</div>
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingOne">
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseOne" aria-expanded="false"
+							aria-controls="flush-collapseOne">회원관리</button>
+					</h2>
+					<div id="flush-collapseOne" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingOne"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+							<button type="button" class="nav-button-sub">회원 리스트</button>
+							<button type="button" class="nav-button-sub">가입대기 회원</button>
+							<button type="button" class="nav-button-sub">탈퇴회원 리스트</button>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingTwo">
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseTwo" aria-expanded="false"
+							aria-controls="flush-collapseTwo">콘텐츠 관리</button>
+					</h2>
+					<div id="flush-collapseTwo" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingTwo"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+							<button type="button" class="nav-button-sub">1</button>
+							<button type="button" class="nav-button-sub">2</button>
+							<button type="button" class="nav-button-sub">3</button>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingThree">
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseThree" aria-expanded="false"
+							aria-controls="flush-collapseThree">제품관리</button>
+					</h2>
+					<div id="flush-collapseThree" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingThree"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+							<button type="button" class="nav-button-sub">1</button>
+							<button type="button" class="nav-button-sub">2</button>
+							<button type="button" class="nav-button-sub">3</button>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingFour">
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFour" aria-expanded="false"
+							aria-controls="flush-collapseFour">주문관리</button>
+					</h2>
+					<div id="flush-collapseFour" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingFour"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+							<button type="button" class="nav-button-sub">1</button>
+							<button type="button" class="nav-button-sub">2</button>
+							<button type="button" class="nav-button-sub">3</button>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingFive">
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFive" aria-expanded="false"
+							aria-controls="flush-collapseFive">신청폼관리</button>
+					</h2>
+					<div id="flush-collapseFive" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingFive"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+							<button type="button" class="nav-button-sub">1</button>
+							<button type="button" class="nav-button-sub">2</button>
+							<button type="button" class="nav-button-sub">3</button>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingSix">
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseSix" aria-expanded="false"
+							aria-controls="flush-collapseSix">예약관리</button>
+					</h2>
+					<div id="flush-collapseSix" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingSix"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+							<button type="button" class="nav-button-sub">1</button>
+							<button type="button" class="nav-button-sub">2</button>
+							<button type="button" class="nav-button-sub">3</button>
+						</div>
+					</div>
+				</div>
+				<h2 class="nav-button-nomal-h2">
+					<button class="nav-button-nomal nav-button-main" type="button">
+						일정관리</button>
+				</h2>
+				<h2 class="nav-button-nomal-h2">
+					<button class="nav-button-nomal nav-button-main" type="button">
+						팝업관리</button>
+				</h2>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingSeven">
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseSeven" aria-expanded="false"
+							aria-controls="flush-collapseSeven">부가기능관리</button>
+					</h2>
+					<div id="flush-collapseSeven" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingSeven"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+							<button type="button" class="nav-button-sub">1</button>
+							<button type="button" class="nav-button-sub">2</button>
+							<button type="button" class="nav-button-sub">3</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="nav-serviceCenter">
+				<h6 id="nav-serviceCenter-title">고객센터</h6>
+				<ul>
+					<li class="nav-serviceCenter-li">공지사항</li>
+					<li class="nav-serviceCenter-li">디자인 유지보수 요청</li>
+					<li class="nav-serviceCenter-li">기능 문의</li>
+					<li class="nav-serviceCenter-li">고객만족도 평가</li>
+				</ul>
+			</div>
+			<div style="height: 20px;"></div>
+			<div
+				style="width: 190px; padding: 10px; background-color: rgb(33, 46, 64); margin: 0 auto;">
+				<img src="icon-book2.png" alt=""
+					style="width: 25px; height: auto; float: left;" /> <a href="#"
+					style="text-underline-position: under;"> <span
+					style="font-size: 11px; color: rgb(50, 174, 198);">무료홈페이지 운영
+						가이드 ></span>
+				</a>
+			</div>
+
+		</nav>
+		<!-- nav 끝 -->
+		
+		
+		<div id="main-full">
+			<!-- 회원정보 -->
+			<div class="container-fluid" style="padding:12px">
+				<div class="modal-header" style="background-color: rgb(49, 50, 54); color: white; border-bottom: none; padding: 8px 15px;margin:15px 15px 0 15px;">
+					<h6 class="modal-title" id="test13-dataLabel">사용자별 (연결필요) 님의 회원정보입니다.</h6>
+				</div>
+				<div class="modal-body" style="background-color: white;margin:0 15px">
+					<div>버튼 4개 자리</div>
+					<div class="memberInfo-header">&#x02666; 회원 기본 정보</div>
+					<div class="container-fluid">
+						<div class="row memberInfo-id-wrap">
+							<div class="col-2 memberInfo-id-front">
+								<span>아이디</span>
+							</div>
+							<div class="col memberInfo-id-back">
+								<span>admin13</span>
+								<!-- (값 불러오기 필요) -->
+								<a href="#" style="font-size: 11px;">비번변경</a>
+							</div>
+						</div>
+						<div class="row memberInfo-name-wrap">
+							<div class="col-2 memberInfo-name-front">
+								<span>이름</span>
+							</div>
+							<div class="col memberInfo-name-back">
+								<span>admin13</span>
+								<!-- (값 불러오기 필요) -->
+							</div>
+						</div>
+						<div class="row memberInfo-email-wrap">
+							<div class="col-2 memberInfo-email-front">
+								<span>이메일</span>
+							</div>
+							<div class="col memberInfo-email-back">
+								<span>admin13@naver.com</span>
+								<!--  (값 불러오기 필요), (미인증버튼)(수신거부버튼) -->
+								<a href="#" style="font-size: 11px;">메일전송</a>
+							</div>
+						</div>
+						<div class="row memberInfo-membershipLevel-wrap">
+							<div class="col-2 memberInfo-membershipLevel-front">
+								<span>회원등급</span>
+							</div>
+							<div class="col memberInfo-membershipLevel-back">
+								<span>일반회원</span>
+								<!-- (값 불러오기 필요) -->
+								<a href="#" style="font-size: 11px;">등급변경</a>
+							</div>
+						</div>
+						<div class="row memberInfo-accessDate-wrap">
+							<div class="col-2 memberInfo-accessDate-front">
+								<span>가입/접속</span>
+							</div>
+							<div class="col memberInfo-accessDate-back">
+								<span>2019.04.18 10:13</span>
+								<!-- (값 불러오기 필요) -->
+							</div>
+						</div>
+						<div class="row memberInfo-login-wrap">
+							<div class="col-2 memberInfo-login-front">
+								<span>로그인</span>
+							</div>
+							<div class="col memberInfo-login-back">
+								<span>총 로그인 </span> <span>0</span>
+								<!-- (값 불러오기 필요) -->
+								<span>회 (마지막 로그인 : </span> <span>로그인 기록 없음)</span>
+								<!-- 로그인 동에 따라 출력 변경 필요 -->
+							</div>
+						</div>
+					</div>
+					<div style="margin: 10px; display: flex; justify-content: center;">
+						<button type="button" class="main-bottom-button-1" data-bs-toggle="">정보수정</button>
+					</div>
+					<div class="memberInfo-header">&#x02666; 사이트 가입 정보</div>
+					<div class="container-fluid">
+						<div class="joinInformation-address">
+							<div class="row joinInformation-address-wrap">
+								<div class="col-2 joinInformation-address-front">
+									<span>주소</span>
+								</div>
+								<div class="col joinInformation-address-back">
+									<span>중앙정보처리학원</span>
+								</div>
+							</div>
+							<div class="row joinInformation-phoneNumber-wrap">
+								<div class="col-2 joinInformation-phoneNumber-front">
+									<span>휴대전화</span>
+								</div>
+								<div class="col joinInformation-phoneNumber-back">
+									<div>
+										<span style="font-size: 12px">010-1234-5678</span> <span>수신거부버튼</span>
+										<a href="#" style="font-size: 11px;">SMS전송</a>
+									</div>
+								</div>
+							</div>
+							<div class="row joinInformation-nickName-wrap">
+								<div class="col-2 joinInformation-nickName-front">
+									<span>닉네임</span>
+								</div>
+								<div class="col joinInformation-nickName-back">
+									<span></span>
+								</div>
+							</div>
+							<div class="row joinInformation-birthday-wrap">
+								<div class="col-2 joinInformation-birthday-front">
+									<span>생년월일(필수)</span>
+								</div>
+								<div class="col joinInformation-birthday-back">
+									<span>1940.09.22</span>
+								</div>
+							</div>
+							<div class="row joinInformation-custom-wrap">
+								<div class="col-2 joinInformation-custom-front">
+									<span>사용자정의</span>
+								</div>
+								<div class="col joinInformation-custom-back">
+									<span></span>
+								</div>
+							</div>
+							<div class="row joinInformation-sex-wrap">
+								<div class="col-2 joinInformation-sex-front">
+									<span>성별</span>
+								</div>
+								<div class="col joinInformation-sex-back">
+									<span>남</span>
+								</div>
+							</div>
+						</div>
+		
+					</div>
+					<div class="memberInfo-header">&#x02666; 관리자 운영메모</div>
+		
+					<div class="container-fluid" style="margin-bottom: 10px;">
+						<div class="row">
+							<div class="col-11" style="display: inline-block; padding: 0;">
+								<input type="text"
+									style="height: 25px; padding: 10px 0; width: 100%; height: 30px; border: 1px solid rgb(220, 221, 226)" />
+							</div>
+							<div class="col"
+								style="display: inline-block; padding: 0; text-align: center;">
+								<button type="submit" class="col main-bottom-button-1"
+									data-bs-toggle=""
+									style="width: 55px; height: 100%; float: right;">등록</button>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid"
+						style="border: 2px solid rgb(220, 221, 226); padding: 0;">
+						<div class="row"
+							style="font-size: 12px; font-weight: 600; text-align: center;">
+							<div class="col" style="padding: 0;">번호</div>
+							<div class="col" style="padding: 0;">작성일</div>
+							<div class="col-6" style="padding: 0;">내용</div>
+							<div class="col" style="padding: 0;">작성자</div>
+							<div class="col" style="padding: 0;">관리</div>
+						</div>
+					</div>
+					<div class="container-fluid" style="padding:0; margin: 15px 0">
+					<div class="row modal-footer"  style="margin:0 0 10px 0;border:none; padding:0;">
+						<div class="col" style="text-align: left;padding: 0">
+							<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+							<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
+						</div>
+						<div class="col" style="text-align: right;padding: 0">
+							<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
+							<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+
+	<!-- source end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
