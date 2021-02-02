@@ -6,9 +6,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>후이즈 홈페이지 운영 가이드</title>
     <style type="text/css">
-    	a {
-    		text-underline-position: under;
-    	}
     	.top-container-text {
     		 background-color: rgb(35 47 63);
     		 border:1px solid rgb(22 31 40);
@@ -125,7 +122,7 @@
     		padding:15px 5px 15px 30px;
     		background-color: white;
     		width:97%;
-    		height: 130px;
+    		height: 110px;
     		margin:0 auto;
     		border:3px solid rgb(244 244 244);
     	}
@@ -136,11 +133,14 @@
     	#main-searchBox-back {
     		display: inline-block;
     		float: right;
-			margin:18px 20px 20px 0;
+			margin:0;
+			padding:7px 10px;
     		
     	}
     	.main-searchBox-line {
-    		padding:5px 0;
+    		display: flex;
+    		padding:25px 0;
+    		vertical-align: middle;
     	}
     	.main-searchBox-front-name {
     		 display: inline-block;
@@ -375,9 +375,21 @@
 			font-weight: 600;
 			padding:5px 10px;
 			height: 30px;
-			background-color: rgb(240 241 245);
 			border:2px solid rgb(220 221 226);
 			border-bottom: none;
+			
+			background-color: rgb(240 241 245);
+		}
+		.join-info-password-front2 {
+			
+			font-size: 13px;
+			font-weight: 600;
+			padding:5px 10px;
+			height: 30px;
+			border:2px solid rgb(220 221 226);
+			border-bottom: none;
+			border-left: none;
+			background-color: rgb(240 241 245);
 		}
 		.join-info-password-back {
 			display: inline-block;
@@ -853,9 +865,8 @@
 	</style>
 	
 	
-	
 	</head>
-		<!-- -------------------------------------     메인페이지: 회원 리스트         ------------------------------------------------------------------------- -->
+		<!-- -------------------------------------     메인페이지: 사용자 추가         ------------------------------------------------------------------------- -->
 	<body style="margin:0;">
 
  		<header style="height: 43px;" > 
@@ -889,25 +900,29 @@
 	<!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->	
 		
 	<div style="width:100%">
-	
+	<!-- nav 시작 -->
 		<nav class="nav-full">
 			<div id="nav-status-wrap">
-				<span class="nav-status">서비스 이용 기간</span>
-				<span class="nav-status-var">2017.01.11~2028.01.11</span>
-				<span class="nav-status"style="display: inline-block;">남은기간 : </span>
-				<span class="nav-status-var" style="display: inline-block;">3190</span>
-				<span class="nav-status"style="display: inline-block;">일</span>
-				<button type="submit"  style="font-size: 11px;">연장하기</button>
+				<span class="nav-status">서비스 이용 기간</span> <span
+					class="nav-status-var">2017.01.11~2028.01.11</span> <span
+					class="nav-status" style="display: inline-block;">남은기간 : </span> <span
+					class="nav-status-var" style="display: inline-block;">3190</span> <span
+					class="nav-status" style="display: inline-block;">일</span>
+				<button type="submit" style="font-size: 11px;">연장하기</button>
 			</div>
 			<div class="accordion accordion-flush" id="accordionFlushExample">
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingOne">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-							회원관리
-						</button>
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseOne" aria-expanded="false"
+							aria-controls="flush-collapseOne">회원관리</button>
 					</h2>
-					<div id="flush-collapseOne" class="accordion-collapse collapse"aria-labelledby="flush-headingOne"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+					<div id="flush-collapseOne" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingOne"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
 							<button type="button" class="nav-button-sub">회원 리스트</button>
 							<button type="button" class="nav-button-sub">가입대기 회원</button>
 							<button type="button" class="nav-button-sub">탈퇴회원 리스트</button>
@@ -916,12 +931,16 @@
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingTwo">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-							콘텐츠 관리
-						</button>
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseTwo" aria-expanded="false"
+							aria-controls="flush-collapseTwo">콘텐츠 관리</button>
 					</h2>
-					<div id="flush-collapseTwo" class="accordion-collapse collapse"aria-labelledby="flush-headingTwo"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+					<div id="flush-collapseTwo" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingTwo"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
 							<button type="button" class="nav-button-sub">1</button>
 							<button type="button" class="nav-button-sub">2</button>
 							<button type="button" class="nav-button-sub">3</button>
@@ -930,12 +949,16 @@
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingThree">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-							제품관리
-						</button>
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseThree" aria-expanded="false"
+							aria-controls="flush-collapseThree">제품관리</button>
 					</h2>
-					<div id="flush-collapseThree" class="accordion-collapse collapse"aria-labelledby="flush-headingThree"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+					<div id="flush-collapseThree" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingThree"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
 							<button type="button" class="nav-button-sub">1</button>
 							<button type="button" class="nav-button-sub">2</button>
 							<button type="button" class="nav-button-sub">3</button>
@@ -944,26 +967,34 @@
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingFour">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-							주문관리
-						</button>
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFour" aria-expanded="false"
+							aria-controls="flush-collapseFour">주문관리</button>
 					</h2>
-					<div id="flush-collapseFour" class="accordion-collapse collapse"aria-labelledby="flush-headingFour"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+					<div id="flush-collapseFour" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingFour"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
 							<button type="button" class="nav-button-sub">1</button>
 							<button type="button" class="nav-button-sub">2</button>
 							<button type="button" class="nav-button-sub">3</button>
 						</div>
 					</div>
-				</div>			
+				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingFive">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-							신청폼관리
-						</button>
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFive" aria-expanded="false"
+							aria-controls="flush-collapseFive">신청폼관리</button>
 					</h2>
-					<div id="flush-collapseFive" class="accordion-collapse collapse"aria-labelledby="flush-headingFive"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+					<div id="flush-collapseFive" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingFive"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
 							<button type="button" class="nav-button-sub">1</button>
 							<button type="button" class="nav-button-sub">2</button>
 							<button type="button" class="nav-button-sub">3</button>
@@ -972,43 +1003,49 @@
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingSix">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-							예약관리
-						</button>
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseSix" aria-expanded="false"
+							aria-controls="flush-collapseSix">예약관리</button>
 					</h2>
-					<div id="flush-collapseSix" class="accordion-collapse collapse"aria-labelledby="flush-headingSix"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+					<div id="flush-collapseSix" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingSix"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
 							<button type="button" class="nav-button-sub">1</button>
 							<button type="button" class="nav-button-sub">2</button>
 							<button type="button" class="nav-button-sub">3</button>
 						</div>
 					</div>
-				</div>	
+				</div>
 				<h2 class="nav-button-nomal-h2">
 					<button class="nav-button-nomal nav-button-main" type="button">
-						일정관리
-					</button>
-				</h2>			
-				<h2 class="nav-button-nomal-h2">
-					<button class="nav-button-nomal nav-button-main" type="button">
-						팝업관리
-					</button>
+						일정관리</button>
 				</h2>
-				
+				<h2 class="nav-button-nomal-h2">
+					<button class="nav-button-nomal nav-button-main" type="button">
+						팝업관리</button>
+				</h2>
+
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingSeven">
-						<button class="accordion-button collapsed nav-button-main" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-							부가기능관리
-						</button>
+						<button class="accordion-button collapsed nav-button-main"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseSeven" aria-expanded="false"
+							aria-controls="flush-collapseSeven">부가기능관리</button>
 					</h2>
-					<div id="flush-collapseSeven" class="accordion-collapse collapse"aria-labelledby="flush-headingSeven"data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body" style="padding:0"><!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
+					<div id="flush-collapseSeven" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingSeven"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" style="padding: 0">
+							<!-- 할일: 클릭시 색깔 변화, 클릭된 부분 색깔 변화, 클릭된 카테고리 버튼부분 우측에 색깔 넣기-->
 							<button type="button" class="nav-button-sub">1</button>
 							<button type="button" class="nav-button-sub">2</button>
 							<button type="button" class="nav-button-sub">3</button>
 						</div>
 					</div>
-				</div>				
+				</div>
 			</div>
 			<div id="nav-serviceCenter">
 				<h6 id="nav-serviceCenter-title">고객센터</h6>
@@ -1019,730 +1056,210 @@
 					<li class="nav-serviceCenter-li">고객만족도 평가</li>
 				</ul>
 			</div>
-			<div style="height: 20px;">
-			</div>
-			<div style="width:190px;padding: 10px;background-color: rgb(33 46 64);margin:0 auto; ">
-				<img src="icon-book2.png" alt="" style="width:25px;height: auto;float: left;"/>
-				<a href="#" style="text-underline-position:under; ">
-					<span style="font-size: 11px;color: rgb(50, 174, 198);">무료홈페이지 운영 가이드 ></span>
+			<div style="height: 20px;"></div>
+			<div
+				style="width: 190px; padding: 10px; background-color: rgb(33, 46, 64); margin: 0 auto;">
+				<img src="icon-book2.png" alt=""
+					style="width: 25px; height: auto; float: left;" /> <a href="#"
+					style="text-underline-position: under;"> <span
+					style="font-size: 11px; color: rgb(50, 174, 198);">무료홈페이지 운영
+						가이드 ></span>
 				</a>
 			</div>
-	
-		</nav>
-		<div id="main-full">
-			<!-- 선택페이지 제목 -->
-			<div style="padding:30px 25px 20px 25px;">
-				<h5 style="margin:0;padding:0;">§ 회원 리스트</h5>
-				<span style="color: rgb(170, 170, 170);font-size: 11px;">사이트 운영 > 회원관리 ></span>
-				<span style="color: rgb(19 194 221);font-size: 11px;">회원 리스트</span>
-			</div>
-			<!-- 서치박스부분 -->
-			<div id="main-searchBox">
-				<div id="main-searchBox-front">
-					<div class="main-searchBox-line">
-						<div class="main-searchBox-front-name">&bull; 회원등급</div>
-						<div style="display:inline-block;">
-							<div class="main-checkbox">
-								<input type="checkbox" value="" id="check-All">
-								<label for="check-All">
-							 		전체
-								</label>
-							</div>
-							<div class="main-checkbox">
-								<input type="checkbox" value="" id="check-1">
-								<label for="check-1">
-							 		탈퇴대기자
-								</label>
-							</div>
-							<div class="main-checkbox">
-								<input type="checkbox" value="" id="check-2">
-								<label for="check-2">
-							 		가입신청자
-								</label>
-							</div>
-							<div class="main-checkbox">
-								<input type="checkbox" value="" id="check-3">
-								<label for="check-3">
-							 		일반회원
-								</label>
-							</div>
-							<div class="main-checkbox">
-								<input type="checkbox" value="" id="check-4">
-								<label for="check-4">
-							 		VIP회원
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="main-searchBox-line">
-						<div class="main-searchBox-front-name">&bull; 수신동의</div>
-						<div style="display:inline-block;">
-							<div class="main-checkbox">
-								<input type="checkbox" value="" id="check-5">
-								<label for="check-5">
-							 		SMS
-								</label>
-							</div>
-							<div class="main-checkbox">
-								<input type="checkbox" value="" id="check-6">
-								<label for="check-6">
-							 		이메일
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="main-searchBox-line">
-						<div class="main-searchBox-front-name2">&bull; 검색어</div>
-						<select style="display: inline-block;border:1px solid  rgb(161 161 161);">
-							<option selected>이름</option>
-							<option value="아이디">아이디</option>
-						</select>
-						<input type="text" style="width: 150px;height: 21.5px;border:1px solid  rgb(161 161 161);">
-						<div class="main-checkbox">
-							<input type="checkbox" value="" id="check-7">
-							<label for="check-7">
-						 		현재 접속중인 회원만 검색
-							</label>
-						
-						</div>
-					</div>	
-				</div>
-				<div id="main-searchBox-back">
-					<button style="color: white;background-color: rgb(20 195 223);border:2px solid rgb(12 191 218);border-radius: 3px;font-size:14px ;width:85px;height: 60px;">검색</button>
-				</div>
-			</div>
-			<!-- 검색결과 부분 -->
-			<div id="main-searchResult">
-			
-				<div  id="main-searchResult-top" style="width:100%">
-					<div   id="main-searchResult-top-front" style="display: inline-block; ">
-						<span>검색결과 : </span>
-						<span style="font-weight: 600;">13</span>
-						<span>/ 총</span>
-						<span style="font-weight: 600;">13</span>
-						<span>명 검색결과를 </span>
-						<a href="#">엑셀저장></a>
-					</div>
-					<div  id="main-searchResult-top-back" style="float: right;" >
-						<select style="border: 1px solid  rgb(175 175 175);border-radius: 3px;font-weight: 700;">
-							<option value="" selected>VIEW</option>
-							<option value="">10</option>
-							<option value="">20</option>
-							<option value="">30</option>
-							<option value="">50</option>
-							<option value="">100</option>
-						</select>
-					</div>
-				</div>
 
-				<!-- 테이블 -->
-				<div id="main-searchResult-table-full">
-					<table id="main-table">
-						<thead>
-							<tr style="border-bottom: 3px solid rgb(232 232 232);">
-								<th class="table-1"><input type="checkbox" /></th>
-								<th class="table-2">번호</th>
-								<th class="table-3">아이디</th>
-								<th class="table-4">이름</th>
-								<th class="table-5" style="color: black;">등급</th>
-								<th class="table-6">상태</th>
-								<th class="table-7">접속수</th>
-								<th class="table-8">가입일</th>
-								<th class="table-9">관리</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">13</td>
-								<td class="table-3">test13</td>
-								<td class="table-4">admin13</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">0<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2019.04.18</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1" data-bs-toggle="modal" data-bs-target="#user-data-modal">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">12</td>
-								<td class="table-3">test12</td>
-								<td class="table-4">admin12</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">1<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2019.04.11</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">11</td>
-								<td class="table-3">test11</td>
-								<td class="table-4">admin11</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">7<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2018.10.30</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">10</td>
-								<td class="table-3">test10</td>
-								<td class="table-4">admin10</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">1<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2018.09.18</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">9</td>
-								<td class="table-3">test9</td>
-								<td class="table-4">admin9</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">2<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2018.04.24</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">8</td>
-								<td class="table-3">test8</td>
-								<td class="table-4">admin8</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">1<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2018.03.22</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">7</td>
-								<td class="table-3">test7</td>
-								<td class="table-4">admin7</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">1<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2018.03.11</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">6</td>
-								<td class="table-3">test6</td>
-								<td class="table-4">admin6</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">9<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2018.03.10</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">5</td>
-								<td class="table-3">test5</td>
-								<td class="table-4">admin5</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">1<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2018.02.25</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-							<tr style="border-bottom: 1px solid rgb(232 232 232);">
-								<td class="table-1"><input type="checkbox" /></td>
-								<td class="table-2">4</td>
-								<td class="table-3">test4</td>
-								<td class="table-4">admin4</td>
-								<td class="table-5">일반회원</td>
-								<td class="table-6">정상</td>
-								<td class="table-7">1<button type="button" disabled class="table-button1">off</button></td>
-								<td class="table-8">2018.02.21</td>
-								<td class="table-9"><button type="button"
-										class="table-button1">비번변경</button>
-									<button type="button" disabled class="table-button1">집</button>
-									<button type="button" disabled class="table-button1">폰</button>
-									<button type="button" class="table-button1">1:1문의</button>
-									<button type="button" class="table-button1">관리</button></td>
-							</tr>
-						</tbody>
-					</table>
+		</nav>
+		<!-- nav 끝 -->
+		
+		
+		<div id="main-full">
+			<!-- 회원정보 -->
+			<div class="container-fluid" style="padding:12px">
+				<div class="modal-header" style="background-color: rgb(49, 50, 54); color: white; border-bottom: none; padding: 8px 15px;margin:15px 15px 0 15px;">
+					<h6 class="modal-title" id="test13-dataLabel">사용자별 (연결필요) 님의 회원정보입니다.</h6>
 				</div>
-				
-				<!-- --------------------------------------------------------페이징, 버튼 --------------------------------------------------------------------------------- -->
-				<!-- 페이징 -->
-				<!-- 여기 가운데 정렬 하고싶은데 방법을 몰라서 패딩으로 강제로 잡았습니다. -->
-				<nav style="padding: 20px 0 0;justify-content: center;display: flex; ">
-					<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Previous"style="padding:0 15px 0 5px;">
-								<span aria-hidden="true"style="color: #212529;letter-spacing:-10px;">&ltrif;&ltrif; </span>
-							</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Previous"style="padding:0 8px;">
-								<span aria-hidden="true"style="color: #212529;">&ltrif;</span>
-							</a>
-						</li>
-						<li class="page-item"><a class="page-link" href="#"style="padding:0 10px;color: #212529;">1</a></li>
-						<li class="page-item"><a class="page-link" href="#"style="padding:0 10px;color: #212529;">2</a></li>
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Next"style="padding:0 8px;">
-								<span aria-hidden="true"style="color: #212529;">&rtrif;</span>
-							</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#" aria-label="Next"style="padding:0 15px 0 5px;">
-								<span aria-hidden="true"style="color: #212529;letter-spacing:-10px;">&rtrif;&rtrif;</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				
-				<!-- 하단 버튼 -->
-				<div class="container-fluid" style="padding:0;">
-					<div class="row" style="margin:0px 0 10px 0;">
-						<div class="col" style="text-align: left;">
-							<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">좌측버튼1</button>
-							<button class="main-bottom-button-2">좌측버튼2</button>
-						</div>
-							
-						<div class="col" style="text-align: right;">
-							<!-- Button trigger modal -->
-							<button class="main-bottom-button-2">일괄등록</button>
-							<button type="button" class="main-bottom-button-1" data-bs-toggle="modal"data-bs-target="#staticBackdrop">회원등록</button>
+				<div class="modal-body" style="background-color: white;margin:0 15px">
+					<div class="container-fluid" style="margin-bottom: 10px">
+						<div class="row">
+							<div class="col-3" style="display: flex; padding: 0; font-size: 12px; font-weight: 600;">
+								<button style="border: 2px solid rgb(220 221 226);padding: 5px 15px; font-weight: 600;width:25%; color:rgb(165 165 165)">방문로그</button>
+								<button style="border: 2px solid rgb(220 221 226);border-left: none;border-right: none;padding: 5px 15px; font-weight: 600;width:25%;  color:rgb(165 165 165) ">커뮤니티</button>
+								<button style="border: 2px solid rgb(220 221 226);border-right: none;padding: 5px 15px; font-weight: 600;width:25%;  color:rgb(165 165 165)">1:1상담</button>
+								<button style="border: 2px solid rgb(220 221 226);padding: 5px 15px; font-weight: 600;width:25%; border-bottom: none;background-color: white;" >회원정보</button>
+							</div>
+							<div class="col" style="display: flex; border-bottom: 2px solid rgb(220 221 226);padding: 0;">
+							</div>
 						</div>
 					</div>
+					<div class="memberInfo-header">&#x02666; 회원 기본 정보</div>
+					<div class="container-fluid">
+						<div class="row memberInfo-id-wrap">
+							<div class="col-2 memberInfo-id-front">
+								<span>아이디</span>
+							</div>
+							<div class="col memberInfo-id-back">
+								<span>test13</span>
+								<!-- (값 불러오기 필요) -->
+								<a href="#" style="font-size: 11px;">비번변경</a>
+							</div>
+						</div>
+						<div class="row memberInfo-name-wrap">
+							<div class="col-2 memberInfo-name-front">
+								<span>이름</span>
+							</div>
+							<div class="col memberInfo-name-back">
+								<span>admin13</span>
+								<!-- (값 불러오기 필요) -->
+							</div>
+						</div>
+						<div class="row memberInfo-email-wrap">
+							<div class="col-2 memberInfo-email-front">
+								<span>이메일</span>
+							</div>
+							<div class="col memberInfo-email-back">
+								<span>admin13@naver.com</span>
+								<!--  (값 불러오기 필요), (미인증버튼)(수신거부버튼) -->
+								<a href="#" style="font-size: 11px;">메일전송</a>
+							</div>
+						</div>
+						<div class="row memberInfo-membershipLevel-wrap">
+							<div class="col-2 memberInfo-membershipLevel-front">
+								<span>회원등급</span>
+							</div>
+							<div class="col memberInfo-membershipLevel-back">
+								<span>일반회원</span>
+								<!-- (값 불러오기 필요) -->
+								<a href="#" style="font-size: 11px;">등급변경</a>
+							</div>
+						</div>
+						<div class="row memberInfo-accessDate-wrap">
+							<div class="col-2 memberInfo-accessDate-front">
+								<span>가입/접속</span>
+							</div>
+							<div class="col memberInfo-accessDate-back">
+								<span>2019.04.18 10:13</span>
+								<!-- (값 불러오기 필요) -->
+							</div>
+						</div>
+						<div class="row memberInfo-login-wrap">
+							<div class="col-2 memberInfo-login-front">
+								<span>로그인</span>
+							</div>
+							<div class="col memberInfo-login-back">
+								<span>총 로그인 </span> <span>0</span>
+								<!-- (값 불러오기 필요) -->
+								<span>회 (마지막 로그인 : </span> <span>로그인 기록 없음)</span>
+								<!-- 로그인 동에 따라 출력 변경 필요 -->
+							</div>
+						</div>
+					</div>
+					<div style="margin: 10px; display: flex; justify-content: center;">
+						<button type="button" class="main-bottom-button-1" data-bs-toggle="">정보수정</button>
+					</div>
+					<div class="memberInfo-header">&#x02666; 사이트 가입 정보</div>
+					<div class="container-fluid">
+						<div class="joinInformation-address">
+							<div class="row joinInformation-address-wrap">
+								<div class="col-2 joinInformation-address-front">
+									<span>주소</span>
+								</div>
+								<div class="col joinInformation-address-back">
+									<span>중앙정보처리학원</span>
+								</div>
+							</div>
+							<div class="row joinInformation-phoneNumber-wrap">
+								<div class="col-2 joinInformation-phoneNumber-front">
+									<span>휴대전화</span>
+								</div>
+								<div class="col joinInformation-phoneNumber-back">
+									<div>
+										<span style="font-size: 12px">010-1234-5678</span> <span>수신거부버튼</span>
+										<a href="#" style="font-size: 11px;">SMS전송</a>
+									</div>
+								</div>
+							</div>
+							<div class="row joinInformation-nickName-wrap">
+								<div class="col-2 joinInformation-nickName-front">
+									<span>닉네임</span>
+								</div>
+								<div class="col joinInformation-nickName-back">
+									<span></span>
+								</div>
+							</div>
+							<div class="row joinInformation-birthday-wrap">
+								<div class="col-2 joinInformation-birthday-front">
+									<span>생년월일(필수)</span>
+								</div>
+								<div class="col joinInformation-birthday-back">
+									<span>1940.09.22</span>
+								</div>
+							</div>
+							<div class="row joinInformation-custom-wrap">
+								<div class="col-2 joinInformation-custom-front">
+									<span>사용자정의</span>
+								</div>
+								<div class="col joinInformation-custom-back">
+									<span></span>
+								</div>
+							</div>
+							<div class="row joinInformation-sex-wrap">
+								<div class="col-2 joinInformation-sex-front">
+									<span>성별</span>
+								</div>
+								<div class="col joinInformation-sex-back">
+									<span>남</span>
+								</div>
+							</div>
+						</div>
+		
+					</div>
+					<div class="memberInfo-header">&#x02666; 관리자 운영메모</div>
+		
+					<div class="container-fluid" style="margin-bottom: 10px;">
+						<div class="row">
+							<div class="col-11" style="display: inline-block; padding: 0;">
+								<input type="text"
+									style="height: 25px; padding: 10px 0; width: 100%; height: 30px; border: 1px solid rgb(220, 221, 226)" />
+							</div>
+							<div class="col"
+								style="display: inline-block; padding: 0; text-align: center;">
+								<button type="submit" class="col main-bottom-button-1"
+									data-bs-toggle=""
+									style="width: 55px; height: 100%; float: right;">등록</button>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid"
+						style="border: 2px solid rgb(220, 221, 226); padding: 0;">
+						<div class="row"
+							style="font-size: 12px; font-weight: 600; text-align: center;">
+							<div class="col" style="padding: 0;">번호</div>
+							<div class="col" style="padding: 0;">작성일</div>
+							<div class="col-6" style="padding: 0;">내용</div>
+							<div class="col" style="padding: 0;">작성자</div>
+							<div class="col" style="padding: 0;">관리</div>
+						</div>
+					</div>
+					<div class="container-fluid" style="padding:0; margin: 15px 0">
+					<div class="row modal-footer"  style="margin:0 0 10px 0;border:none; padding:0;">
+						<div class="col" style="text-align: left;padding: 0">
+							<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+							<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
+						</div>
+						<div class="col" style="text-align: right;padding: 0">
+							<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
+							<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
+						</div>
+					</div>
+					</div>
 				</div>
-				<!-- 하단버튼 끝 -->
 			</div>
+
+
+
+
 		</div>
 	</div>
-			<!-- --Modal-- -->
-			<!-- --사용자 추가 Modal 시작-- -->
-			<div class="modal fade " id="staticBackdrop"
-				data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="staticBackdropLabel" aria-hidden="true">
-				<div class="modal-dialog modal-xl">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="staticBackdropLabel">§ 사용자 추가</h5>
-							<button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<div class="join-name">
-								&#x02666; 사용자 정보 입력
-							</div>
-							<div id="join-top">
-								<div class="row"	id="join-info-id-wrap">
-									<div class="col-2" id="join-info-id-front">
-										<span>아이디</span>
-										<span style="color: red">*</span>
-									</div>
-									<div class="col" id="join-info-id-back">
-										<input type="text" class="join-inputBox-1"/>
-										<a href="#" style="font-size: 11px;text-underline-position: under; " >중복체크</a>
-									</div>
-								</div>
-								<div class="row" id="join-info-name-wrap">
-									<div class="col-2" id="join-info-name-front">
-										<span>이름</span>
-										<span style="color: red">*</span>
-									</div>
-									<div class="col" id="join-info-name-back">
-										<input type="text" class="join-inputBox-1" />
-									</div>										
-								</div>
-								<div class="row" id="join-info-passowrd-wrap">
-									<div class="col-2 join-info-password-front">
-										<span>비밀번호</span>
-										<span style="color: red">*</span>
-									</div>
-									<div class="col join-info-password-back">
-										<input type="text" class="join-inputBox-1" />
-										<span class="join-example">* 알파벳 소문자, 숫자 포함 8자 이상 30자 이하</span>
-									</div>
-									<div class="col-2 join-info-password-front">
-										<span>비밀번호 확인</span>
-										<span style="color: red">*</span>
-									</div>
-									<div class="col join-info-password-back">
-										<input type="text" class="join-inputBox-1" />
-									</div>
-								</div>
-								<div class="row" id="join-info-mail-wrap">
-									<div class="col-2" id="join-info-mail-front">
-										<span>이메일</span>
-									</div>
-									<div class="col" id="join-info-mail-back">
-										<input type="text" class="join-inputBox-2" />
-										<span>@</span>
-										<input type="text" class="join-inputBox-2" />
-										<select style="height: 20px;font-size: 12px; border-color:rgb(175 175 175)">
-											<option value="" selected>직접입력</option>
-											<option value="">naver.com</option>
-											<option value="">daum.net</option>
-											<option value="">gamil.com</option>
-										</select>
-									</div>
-								</div>
-								<div class="row" id="join-info-phoneNumber-wrap">
-									<div class="col-2" id="join-info-phoneNumber-front">
-										<span>휴대폰</span>
-									</div>
-									<div class="col" id="join-info-phoneNumber-back">
-										<select style="height: 20px;font-size: 12px; border-color:rgb(175 175 175)">
-											<option value="" selected>선택</option>
-											<option value="">010</option>
-											<option value="">011</option>
-											<option value="">016</option>
-											<option value="">017</option>
-											<option value="">019</option>
-										</select>
-										<span>-</span>
-										<input type="text" class="join-inputBox-3" />
-										<span>-</span>
-										<input type="text" class="join-inputBox-3" />
-									</div>
-								</div>
-								<div class="row" id="join-info-department-wrap">
-									<div class="col-2" id="join-info-department-front">
-										<span>소속(부서/팀)</span>
-									</div>
-									<div class="col" id="join-info-department-back">
-										<input type="text" class="join-inputBox-1" />
-										<p class="join-example">예) 기획팀, 마케팅팀, 전략기획실, 임원</p>
-									</div>
-								</div>
-								<div class="row" id="join-info-position-wrap">
-									<div class="col-2" id="join-info-position-front">
-										<span>직급</span>
-									</div>
-									<div class="col" id="join-info-position-back">
-										<input type="text" class="join-inputBox-1" />
-										<p class="join-example">예) 사원, 대리, 부장, 대표</p>
-									</div>
-								</div>
-								<div class="row" id="join-info-memo-wrap">
-									<div class="col-2" id="join-info-memo-front">
-										<span>메모</span>
-									</div>
-									<div class="col" id="join-info-memo-back">
-										<input type="text" class="join-inputBox-4" />
-									</div>
-								</div>
-								
-							</div>
-							
-							<div class="join-name">
-								&#x02666; 사용자 권한 설정
-							</div>
-							
-							<div id="join-bottom">
-								<div class="row" id="join-permissions-login-wrap">
-									<div class="col-2" id="join-permissions-login-front">
-										<span>로그인 허용</span>
-									</div>
-									<div class="col" id="join-permissions-login-back">									
-										<input type="checkbox" checked="checked"/>
-										<span>허용함</span>
-									</div>
-								</div>
-								<div class="row" id="join-permissions-set-wrap">
-									<div class="col-2" id="join-permissions-set-front">
-										<span>권한설정</span>
-									</div>
-									<div class="col" id="join-permissions-set-back">	
-										<div>
-											<input type="checkbox" checked="checked" />
-											<span>사이트운영</span>
-										</div>
-										<div>
-											<input type="checkbox" checked="checked" />
-											<span>SMS/메일</span>
-										</div>	
-										<div>
-											<input type="checkbox" checked="checked" />
-											<span>디자인관리</span>
-										</div>
-										<div>
-											<input type="checkbox" checked="checked"/>
-											<span>모바일 디자인관리</span>
-										</div>
-										<div>
-											<input type="checkbox" checked="checked" />
-											<span>환경설정</span>
-										</div>				
-									</div>
-								</div>
-								<div class="row" id="join-permissions-setPage-wrap">
-									<div class="col-2" id="join-permissions-setPage-front">
-										<span>첫 페이지 설정</span>
-									</div>
-									<div class="col" id="join-permissions-setPage-back">
-										<select style="height: 20px;font-size: 12px;margin-top: 5px; border-color:rgb(175 175 175)">
-											<option value="" selected>사이트운영</option>
-											<option value="">메뉴@~@</option>
-											<option value="">메뉴~@~</option>
-										</select>
-										<p class="join-example">로그인 시 로딩되는 첫 페이지를 설정합니다.</p>
-									</div>
-								</div>
 
-							</div>
-
-						</div>
-	
-						
-						
-			<!-- 사용자 추가 Modal 하단 버튼 -->
-						<div class="row modal-footer"  style="margin:0;border:none; padding:0;">
-							<div class="col" style="text-align: left;">
-								<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
-								<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
-							</div>
-							<div class="col" style="text-align: right;">
-								<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
-								<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
-							</div>
-						</div>
-			<!-- 사용자 추가 Modal 하단 버튼 끝-->
-					</div>
-				</div>
-			</div>					
-			<!-- --사용자 추가 Modal 끝-- -->		
-			<!-- --회원 정보 Modal 시작-- -->	
-			<div class="modal fade " id="user-data-modal"
-				data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="test13-dataLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header" style="background-color: rgb(49 50 54); color: white;border-bottom:none;padding:8px 15px; ">
-							<h6 class="modal-title" id="test13-dataLabel">사용자별 (연결필요) 님의 회원정보입니다.</h6>
-							<button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<div>
-								버튼 4개 자리
-							</div>
-							<div class="memberInfo-header">
-								&#x02666; 회원 기본 정보
-							</div>
-							<div class="container">
-								<div class="row memberInfo-id-wrap">
-									<div class="col-2 memberInfo-id-front">
-										<span>아이디</span>
-									</div>
-									<div class="col memberInfo-id-back">
-										<span>test13</span><!-- (값 불러오기 필요) -->
-										<a href="#" style="font-size: 11px;" >비번변경</a>
-									</div>
-								</div>
-								<div class="row memberInfo-name-wrap">
-									<div class="col-2 memberInfo-name-front">
-										<span>이름</span>
-									</div>
-									<div class="col memberInfo-name-back">
-										<span>admin13</span><!-- (값 불러오기 필요) -->
-									</div>										
-								</div>
-								<div class="row memberInfo-email-wrap">
-									<div class="col-2 memberInfo-email-front">
-										<span>이메일</span>
-									</div>
-									<div class="col memberInfo-email-back">
-										<span>admin13@naver.com</span><!--  (값 불러오기 필요), (미인증버튼)(수신거부버튼) -->
-										<a href="#" style="font-size: 11px;" >메일전송</a>
-									</div>
-								</div>
-								<div class="row memberInfo-membershipLevel-wrap">
-									<div class="col-2 memberInfo-membershipLevel-front">
-										<span>회원등급</span>
-									</div>
-									<div class="col memberInfo-membershipLevel-back">
-										<span>일반회원</span><!-- (값 불러오기 필요) -->
-										<a href="#" style="font-size: 11px;" >등급변경</a>
-									</div>
-								</div>
-								<div class="row memberInfo-accessDate-wrap">
-									<div class="col-2 memberInfo-accessDate-front">
-										<span>가입/접속</span>
-									</div>
-									<div class="col memberInfo-accessDate-back">
-										<span>2019.04.18 10:13</span><!-- (값 불러오기 필요) -->
-									</div>
-								</div>
-								<div class="row memberInfo-login-wrap">
-									<div class="col-2 memberInfo-login-front">
-										<span>로그인</span>
-									</div>
-									<div class="col memberInfo-login-back">
-										<span>총 로그인 </span>
-										<span>0</span><!-- (값 불러오기 필요) -->
-										<span>회 (마지막 로그인 : </span>
-										<span>로그인 기록 없음)</span><!-- 로그인 동에 따라 출력 변경 필요 -->
-									</div>
-								</div>
-							</div>
-							<button type="button" class="main-bottom-button-1" data-bs-toggle="" style="margin:10px 45% 0;">정보수정</button>
-							<div class="memberInfo-header">
-								&#x02666; 사이트 가입 정보
-							</div>
-							<div class="container">
-								<div class="joinInformation-address">
-									<div class="row joinInformation-address-wrap">
-										<div class="col-2 joinInformation-address-front">
-											<span>주소</span>
-										</div>
-										<div class="col joinInformation-address-back">									
-											<span>중앙정보처리학원</span>
-										</div>
-									</div>
-									<div class="row joinInformation-phoneNumber-wrap">
-										<div class="col-2 joinInformation-phoneNumber-front">
-											<span>휴대전화</span>
-										</div>
-										<div class="col joinInformation-phoneNumber-back">	
-											<div>
-												<span style="font-size: 12px">010-1234-5678</span>
-												<span>수신거부버튼</span>
-												<a href="#" style="font-size: 11px;" >SMS전송</a>
-											</div>			
-										</div>
-									</div>
-									<div class="row joinInformation-nickName-wrap">
-										<div class="col-2 joinInformation-nickName-front">
-											<span>닉네임</span>
-										</div>
-										<div class="col joinInformation-nickName-back">									
-											<span></span>
-										</div>
-									</div>
-									<div class="row joinInformation-birthday-wrap">
-										<div class="col-2 joinInformation-birthday-front">
-											<span>생년월일(필수)</span>
-										</div>
-										<div class="col joinInformation-birthday-back">									
-											<span>1940.09.22</span>
-										</div>
-									</div>
-									<div class="row joinInformation-custom-wrap">
-										<div class="col-2 joinInformation-custom-front">
-											<span>사용자정의</span>
-										</div>
-										<div class="col joinInformation-custom-back">									
-											<span></span>
-										</div>
-									</div>
-									<div class="row joinInformation-sex-wrap">
-										<div class="col-2 joinInformation-sex-front">
-											<span>성별</span>
-										</div>
-										<div class="col joinInformation-sex-back">									
-											<span>남</span>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							<div class="memberInfo-header">
-								&#x02666; 관리자 운영메모
-							</div>
-						
-							<div class="container"style="margin-bottom:10px; ">
-								<div class="row">
-									<div class="col-11" style="display: inline-block ; padding:0;">
-										<input type="text" style="height: 25px;padding:10px 0;width:100%;height: 30px;border:1px solid rgb(220 221 226)"/>
-									</div>
-									<div class="col" style="display: inline-block ; padding:0; text-align: center;">
-										<button type="submit" class="col main-bottom-button-1" data-bs-toggle="" style="width: 55px;height: 100%; float: right;">등록</button>
-									</div>
-								</div>
-							</div>
-							<div class="container" style="border:2px solid rgb(220 221 226);padding:0;">
-								<div class="row" style="font-size: 12px;font-weight: 600; text-align: center;">
-									<div class="col" style="padding: 0;">
-										번호
-									</div>
-									<div class="col" style="padding: 0;">
-										작성일
-									</div>
-									<div class="col-6" style="padding: 0;">
-										내용
-									</div>
-									<div class="col" style="padding: 0;">
-										작성자
-									</div>
-									<div class="col" style="padding: 0;">
-										관리
-									</div>
-								</div>
-							</div>
-							
-
-						</div>
-	
-						<!-- Modal 하단 버튼 -->
-						<div class="row modal-footer"  style="margin:0 0 10px 0;border:none; padding:0;">
-							<div class="col" style="text-align: left;">
-								<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
-								<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
-							</div>
-							<div class="col" style="text-align: right;">
-								<button type="button" class="main-bottom-button-1" data-bs-toggle="modal">확인</button>
-								<button type="button" class="main-bottom-button-1" data-bs-dismiss="modal" style="background-color: rgb(179 179 179) ; border-color:rgb(179 179 199) ">취소</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- --회원 정보 Modal 끝-- -->	
-		<!-- --Modal 끝-- -->			
 
 	<!-- source end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

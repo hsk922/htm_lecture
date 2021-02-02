@@ -1,157 +1,143 @@
-<div class="modal-header"
-	style="background-color: rgb(49, 50, 54); color: white; border-bottom: none; padding: 8px 15px;">
-	<h6 class="modal-title" id="test13-dataLabel">사용자별 (연결필요) 님의
-		회원정보입니다.</h6>
-	<button type="button" class="btn-close" data-bs-dismiss="modal"
-		aria-label="Close"></button>
-</div>
-<div class="modal-body">
-	<div>버튼 4개 자리</div>
-	<div class="memberInfo-header">&#x02666; 회원 기본 정보</div>
-	<div class="container">
-		<div class="row memberInfo-id-wrap">
-			<div class="col-2 memberInfo-id-front">
-				<span>아이디</span>
-			</div>
-			<div class="col memberInfo-id-back">
-				<span>admin13</span>
-				<!-- (값 불러오기 필요) -->
-				<a href="#" style="font-size: 11px;">비번변경</a>
-			</div>
-		</div>
-		<div class="row memberInfo-name-wrap">
-			<div class="col-2 memberInfo-name-front">
-				<span>이름</span>
-			</div>
-			<div class="col memberInfo-name-back">
-				<span>admin13</span>
-				<!-- (값 불러오기 필요) -->
-			</div>
-		</div>
-		<div class="row memberInfo-email-wrap">
-			<div class="col-2 memberInfo-email-front">
-				<span>이메일</span>
-			</div>
-			<div class="col memberInfo-email-back">
-				<span>admin13@naver.com</span>
-				<!--  (값 불러오기 필요), (미인증버튼)(수신거부버튼) -->
-				<a href="#" style="font-size: 11px;">메일전송</a>
-			</div>
-		</div>
-		<div class="row memberInfo-membershipLevel-wrap">
-			<div class="col-2 memberInfo-membershipLevel-front">
-				<span>회원등급</span>
-			</div>
-			<div class="col memberInfo-membershipLevel-back">
-				<span>일반회원</span>
-				<!-- (값 불러오기 필요) -->
-				<a href="#" style="font-size: 11px;">등급변경</a>
-			</div>
-		</div>
-		<div class="row memberInfo-accessDate-wrap">
-			<div class="col-2 memberInfo-accessDate-front">
-				<span>가입/접속</span>
-			</div>
-			<div class="col memberInfo-accessDate-back">
-				<span>2019.04.18 10:13</span>
-				<!-- (값 불러오기 필요) -->
-			</div>
-		</div>
-		<div class="row memberInfo-login-wrap">
-			<div class="col-2 memberInfo-login-front">
-				<span>로그인</span>
-			</div>
-			<div class="col memberInfo-login-back">
-				<span>총 로그인 </span> <span>0</span>
-				<!-- (값 불러오기 필요) -->
-				<span>회 (마지막 로그인 : </span> <span>로그인 기록 없음)</span>
-				<!-- 로그인 동에 따라 출력 변경 필요 -->
-			</div>
-		</div>
-	</div>
-	<button type="button" class="main-bottom-button-1" data-bs-toggle=""
-		style="margin: 10px 45% 0;">정보수정</button>
-	<div class="memberInfo-header">&#x02666; 사이트 가입 정보</div>
-	<div class="container">
-		<div class="joinInformation-address">
-			<div class="row joinInformation-address-wrap">
-				<div class="col-2 joinInformation-address-front">
-					<span>주소</span>
-				</div>
-				<div class="col joinInformation-address-back">
-					<span>중앙정보처리학원</span>
-				</div>
-			</div>
-			<div class="row joinInformation-phoneNumber-wrap">
-				<div class="col-2 joinInformation-phoneNumber-front">
-					<span>휴대전화</span>
-				</div>
-				<div class="col joinInformation-phoneNumber-back">
-					<div>
-						<span style="font-size: 12px">010-1234-5678</span> <span>수신거부버튼</span>
-						<a href="#" style="font-size: 11px;">SMS전송</a>
-					</div>
-				</div>
-			</div>
-			<div class="row joinInformation-nickName-wrap">
-				<div class="col-2 joinInformation-nickName-front">
-					<span>닉네임</span>
-				</div>
-				<div class="col joinInformation-nickName-back">
-					<span></span>
-				</div>
-			</div>
-			<div class="row joinInformation-birthday-wrap">
-				<div class="col-2 joinInformation-birthday-front">
-					<span>생년월일(필수)</span>
-				</div>
-				<div class="col joinInformation-birthday-back">
-					<span>1940.09.22</span>
-				</div>
-			</div>
-			<div class="row joinInformation-custom-wrap">
-				<div class="col-2 joinInformation-custom-front">
-					<span>사용자정의</span>
-				</div>
-				<div class="col joinInformation-custom-back">
-					<span></span>
-				</div>
-			</div>
-			<div class="row joinInformation-sex-wrap">
-				<div class="col-2 joinInformation-sex-front">
-					<span>성별</span>
-				</div>
-				<div class="col joinInformation-sex-back">
-					<span>남</span>
-				</div>
-			</div>
-		</div>
+---
+layout: default
+---
+<div class="instructions-wrap">
+  <section class="introduction-section">
+    <h3 class="introduction-title">Before we start</h3>
+    <div class="introduction-content">
+      <p>Open Color defines specified usage of each color. This post describes supposed usage of colors. Open Color will help you easily decide what color to use for your product. You might want to call it a manual. If you aren't quite sure about the colors you choose, this manual can help you figure out. Open Color is not a rule set. It only suggests you affordable options. Issue reports and Pull requests are always welcome.</p>
+    </div>
+  </section>
+  <section class="introduction-section">
+    <h3 class="introduction-title">Gray spectrum composition</h3>
+    <div class="introduction-content">
+      <p>When gray is used for a UI element, the brightness itself can imply specific significance. When an element turns dark as you hover your mouse, this indicates that the element is clickable. A distinctively bright gray one indicates that the element has been disabled or expired. Other colors in Open Color have a constant difference in brightness separated into ten different levels. However, gray colors of Open Color don't vary in the same degree because specific brightness holds implications as mentioned.</p>
+      <p>Let's find out how each color is used.</p>
+    </div>
+  </section>
+  <section class="introduction-section">
+    <h3 class="introduction-title">Text</h3>
+    <div class="introduction-content">
+      <p>Gray 7 or Gray 8 is recommended for body text. The soft color of Gray 7 naturally matches with a background. Therefore it is appropriate for a UI element with concrete function such as menu labels or buttons. If a content itself is empathized as in blog posts, SNS or headline, Gray 8 can make a clearly readable text. </p>
+      <hr>
+      <div class="row example">
+        <div class="col-half color-gray-7">
+          <h5>Text in Gray 7</h5>
+          <p>Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+        </div>
+        <div class="col-half color-gray-8">
+          <h5>Text in Gray 8</h5>
+          <p>Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+        </div>
+      </div>
+      <hr>
+      <p>Text is often written in gray as well as black. Text in gray can be categorized into two usages. Gray is useful for text which isn’t as important as others. For example, additional explanations below headlines or metadata. Gray 6 is handy because it is a brighter color compared to the body text yet read as disabled. On the other hand, gray is also appropriate to indicate disabled forms, buttons and links. In this case, Gray 5 is recommended.</p>
 
-	</div>
-	<div class="memberInfo-header">&#x02666; 관리자 운영메모</div>
-
-	<div class="container" style="margin-bottom: 10px;">
-		<div class="row">
-			<div class="col-11" style="display: inline-block; padding: 0;">
-				<input type="text"
-					style="height: 25px; padding: 10px 0; width: 100%; height: 30px; border: 1px solid rgb(220, 221, 226)" />
-			</div>
-			<div class="col"
-				style="display: inline-block; padding: 0; text-align: center;">
-				<button type="submit" class="col main-bottom-button-1"
-					data-bs-toggle="" style="width: 55px; height: 100%; float: right;">등록</button>
-			</div>
-		</div>
-	</div>
-	<div class="container"
-		style="border: 2px solid rgb(220, 221, 226); padding: 0;">
-		<div class="row"
-			style="font-size: 12px; font-weight: 600; text-align: center;">
-			<div class="col" style="padding: 0;">번호</div>
-			<div class="col" style="padding: 0;">작성일</div>
-			<div class="col-6" style="padding: 0;">내용</div>
-			<div class="col" style="padding: 0;">작성자</div>
-			<div class="col" style="padding: 0;">관리</div>
-		</div>
-	</div>
+      <hr>
+      <div class="row example">
+        <div class="col-half color-gray-5">
+          <h5>Text in Gray 5</h5>
+          <p>Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+        </div>
+        <div class="col-half color-gray-6">
+          <h5>Text in Gray 6</h5>
+          <p>Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="introduction-section">
+    <h3 class="introduction-title">Background</h3>
+    <div class="introduction-content">
+      <p>In many products, we can see the background in white, but if you want to switch modes or separate spaces, light gray such as Gray 0 or Gray 1 can be chosen. Until recently, Gray 0 (<code>#f8f9fa</code>) which is fairly close to white wasn’t used. However, as display technology in digital devices advance and extremely simple designs come in trend, a very bright gray color started to appear in UI. For that reason, Gray 1 can seem a bit old-fashioned, but it is affordable for low-end devices and users who don’t have clear eyesight.When separating spaces with color over Gray 0 background, Gray 1 is useful.</p>
+      <div class="row example">
+        <div class="col-half">
+          <div class="box bg-gray-0">
+            Backgound in Gray 0
+          </div>
+        </div>
+        <div class="col-half">
+          <div class="box bg-gray-1">
+            Backgound in Gray 1
+          </div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="box bg-gray-0">
+          Backgound in Gray 0
+          <div class="box bg-gray-1">
+            Backgound in Gray 1
+          </div>
+        </div>
+      </div>
+      <p>You can use darker background color to represent status change such as active, hover for elements like buttons. In this case, 2 levels darker than normal buttons are suggested.</p>
+      <div class="row example">
+        <div class="col-half">
+          <button class="box button" type="submit">
+            Put your cursor here
+          </button>
+        </div>
+        <div class="col-half">
+          <button class="box button bg-gray-0" type="submit">
+            Put your cursor here
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="introduction-section">
+    <h3 class="introduction-title">Stroke</h3>
+    <div class="introduction-content">
+      <p>Stroke elements use Gray 3 and Gray 4. Gray 3 is affordable for strokes which divide compartments such as <code>&lt;hr&gt;</code>. Gray 4 is appropriate for strokes implying boundary of forms or buttons can be operated.</p>
+      <div class="row example">
+        <div class="col-half">
+          <div class="box border-gray-3">
+            Stroke in Gray 3
+          </div>
+        </div>
+        <div class="col-half">
+          <div class="box border-gray-4">
+            Stroke in Gray 4
+          </div>
+        </div>
+      </div>
+      <p>Use Gray 2 when hinting a disabled status.</p>
+      <div class="row example">
+        <div class="col-half">
+          <div class="box border-gray-4">
+            Stroke in Gray 4
+          </div>
+        </div>
+        <div class="col-half">
+          <div class="box border-gray-2 color-gray-5">
+            Stroke in Gray 2
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="introduction-section">
+    <h3 class="introduction-title">Inverted color</h3>
+    <div class="introduction-content">
+      <p>Although Open Color is based on UI style of a white background with elements in strokes, the black background is often chosen along with the white text. At this point, the Gray 9 for background, Gray 7 for strokes and text can be in Gray 0, Gray 5, Gray 6.</p>
+      <div class="example">
+        <div class="box bg-box-block bg-gray-9 color-gray-5">
+          Background in Gray 9
+          <hr class="bg-gray-7">
+          <div class="color-gray-0">
+            Text in Gray 0
+          </div>
+          <div class="color-gray-5">
+            Text in Gray 5
+          </div>
+          <div class="color-gray-6">
+            Text in Gray 6
+          </div>
+          <div class="box bg-box-block bg-gray-8 color-gray-5">
+            Background in Gray 8
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
